@@ -27,5 +27,10 @@ At the end of the end, we did a run through of the first draft of the story, mad
 
 At the very end of the day, Corinna set up the repository and added Callum & Steph as collaborators ready to hit the ground running on Monday.
 
+Monday:
 Monday morning, we established a plan for the day and divided up tasks.
 Callum was on creating the file structure in the repo, and then agreed to move onto clerk and setting it up. Corinna had structured the story in ink over the weekend but couldn’t see it in the output window so she put it in discord, and Steph agreed to have a play about with it to get it working and then would get it imported to the repo. Corinna agreed to set up the supabase tables, put the secret keys in the repo then get it deployed on vercel.
+
+Corinna had a couple issues setting up the git repo so had to redo the setup three or four times due to errors with git. Callum completed the file set up and pushed it all to the repo, small error with deploying on vercel due to the change of name with middleware, due to there being an update to next which changed the middleware name to proxy. It errored again due to needing to add the clerk keys to vercel. Vercel then deployed without issue.
+
+Corinna set up the tables, ready to move on to querying the database. Steph finished making edits and changes to the story and imported it to the repo. Callum set about implementing clerk.
