@@ -1,13 +1,14 @@
 
+
 "use client";
 import CommentsPage from "@/app/comments/page.js";
 import FeedbackPage from "@/app/feedback/page.js";
-
 import React, { useState } from "react";
 
 export default function Home() {
   return (
     <div>
+
       <h1>Welcome to H.E.L.I</h1>
       <h2>Helping Everyone Learn Interactively</h2>
       <CommentsPage />
