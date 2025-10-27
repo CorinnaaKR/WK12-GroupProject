@@ -10,9 +10,7 @@ export default function StoryPage() {
           <div id="story" className="container"></div>
         </div>
       </section>
-      <section id="word-storage" className="">
-        <InkButtons />
-      </section>
+      <InkButtons />
       <Script src="/ink-files/ink.js"></Script>
       <Script src="/ink-files/firstDraft.js"></Script>
       <Script src="/ink-files/main.js"></Script>
