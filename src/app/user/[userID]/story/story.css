@@ -265,7 +265,7 @@ body.dark {
 /*custom stuff*/
 
 #word-storage {
-  width: 10%;
+  width: 20vw;
   overflow-y: scroll;
   border: 1px solid black;
   margin: 10px;
