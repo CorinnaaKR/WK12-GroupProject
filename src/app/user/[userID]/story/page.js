@@ -11,7 +11,6 @@ export default function StoryPage() {
         </div>
       </section>
       <InkButtons />
-      <Script src="/ink-files/ink.js"></Script>
       <Script src="/ink-files/firstDraft.js"></Script>
       <Script src="/ink-files/ink.js"></Script>
       <Script src="/ink-files/main.js"></Script>
