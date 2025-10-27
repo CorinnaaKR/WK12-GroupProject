@@ -1,3 +1,7 @@
+# Week 12 Assignment
+
+## story based learning tool focused on the prevent scheme
+
 Thursday: After choosing groups, we were put in breakout rooms and began discussing ideas. We agreed on the idea and then broken down the planning tasks. We created a trello board for tasks to be completed and assigned, a google doc for our communication plan, user stories and general planning + mark scheme, a figma for the wireframe, canva for the web site map with an initial table to track what information we would need for the database, and then DrawSQL to template the database structure.
 Steph did the canva (site map) & set up documentation (trello, google docs ect.)
 Corinna did the figma (wireframe)
