@@ -1,8 +1,8 @@
 CREATE TABLE IF NOT EXISTS users (
   id TEXT PRIMARY KEY,
   username TEXT NOT NULL,
-  name TEXT NOT NULL,
-  position varchar(255),
+  first_name TEXT NOT NULL,
+  last_name TEXT NOT NULL,
   avatar TEXT,
   email TEXT NOT NULL
 );
