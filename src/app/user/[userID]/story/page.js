@@ -13,8 +13,8 @@ export default function StoryPage() {
       <section id="word-storage" className="">
         <InkButtons />
       </section>
-      <Script src="/ink-files/ink.js"></Script>
       <Script src="/ink-files/firstDraft.js"></Script>
+      <Script src="/ink-files/ink.js"></Script>
       <Script src="/ink-files/main.js"></Script>
     </main>
   );
