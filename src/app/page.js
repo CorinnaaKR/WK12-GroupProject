@@ -6,18 +6,31 @@ import { db } from "@/utils/dbConnection";
 export default async function Home() {
   let currUser;
   currUser = await currentUser();
-  if (currUser != undefined) {
-    db.query(
-      `INSERT INTO users (id,username,first_name,last_name,email) VALUES ($1,$2,$3,$4,$5)`,
-      [
-        currUser.id,
-        currUser.username,
-        currUser.firstName,
-        currUser.lastName,
-        currUser.emailAddresses[0].emailAddress,
-      ]
-    );
+  let res = await db.query(`SELECT id FROM users`);
+  let data = res.rows;
+  console.log(data);
+  let userExists = false;
+  for (let i = 0; i < data.length; i++) {
+    if (currUser.id == data[i].id) {
+      userExists = true;
+      break;
+    }
   }
+  if (!userExists) {
+    if (currUser != undefined) {
+      db.query(
+        `INSERT INTO users (id,username,first_name,last_name,email) VALUES ($1,$2,$3,$4,$5)`,
+        [
+          currUser.id,
+          currUser.username,
+          currUser.firstName,
+          currUser.lastName,
+          currUser.emailAddresses[0].emailAddress,
+        ]
+      );
+    }
+  }
+
   return (
     <div>
       <header />
