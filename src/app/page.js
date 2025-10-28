@@ -8,7 +8,7 @@ export default async function Home() {
   currUser = await currentUser();
   if (currUser != undefined) {
     db.query(
-      `INSERT INTO users (id,username,first_name,last_name,email) VALUES ($1,$2,$3,$4)`,
+      `INSERT INTO users (id,username,first_name,last_name,email) VALUES ($1,$2,$3,$4,$5)`,
       [
         currUser.id,
         currUser.username,
