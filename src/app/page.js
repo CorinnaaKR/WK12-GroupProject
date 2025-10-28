@@ -23,8 +23,8 @@ export default async function Home() {
       <p></p>
       <Footer />
 
-      {/* <CommentsPage />
-      <FeedbackPage /> */}
+      <CommentsPage />
+      {/* <FeedbackPage /> */}
     </div>
   );
 }
