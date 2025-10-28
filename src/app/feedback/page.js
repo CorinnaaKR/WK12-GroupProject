@@ -1,8 +1,8 @@
-"use client";
+// "use client";
 
 import React, { useState } from "react";
 
-export default function CommentsPage() {
+export default function FeedbackPage() {
   const [name, setName] = useState(``);
   const [email, setEmail] = useState(``);
   const [comment, setComment] = useState(``);
@@ -27,7 +27,7 @@ export default function CommentsPage() {
 
   return (
     <div>
-      <h1>Comments</h1>
+      <h1>Feedback</h1>
       <div>
         <h2>Leave a comment</h2>
         <form onSubmit={submitForm}>
@@ -56,17 +56,54 @@ export default function CommentsPage() {
           </div>
 
           <div>
-            <label htmlFor="commentBox">Comment:</label>
+            <label htmlFor="doneWell">What did we do well?:</label>
             <textarea
               required
-              id="commentBox"
-              placeholder="Leave a comment"
+              type="text"
+              id="wellBox"
+              placeholder="What were we great at?"
               value={comment}
               onChange={(event) => setComment(event.target.value)}
             />
           </div>
 
-          <button type="submit">Submit Comment</button>
+          <div>
+            <label htmlFor="doBetter">What could we do better?:</label>
+            <textarea
+              required
+              type="text"
+              id="betterBox"
+              placeholder="How could we improve?"
+              value={comment}
+              onChange={(event) => setComment(event.target.value)}
+            />
+          </div>
+
+          <div>
+            <label htmlFor="foundUseful">What did you find useful?:</label>
+            <textarea
+              required
+              type="text"
+              id="usefulBox"
+              placeholder="What was the most useful part?"
+              value={comment}
+              onChange={(event) => setComment(event.target.value)}
+            />
+          </div>
+
+          <div>
+            <label htmlFor="other">Any other feedback?:</label>
+            <textarea
+              required
+              type="text"
+              id="otherBox"
+              placeholder="We welcome all feedback!"
+              value={comment}
+              onChange={(event) => setComment(event.target.value)}
+            />
+          </div>
+
+          <button type="submit">Submit Feedback</button>
         </form>
       </div>
     </div>
