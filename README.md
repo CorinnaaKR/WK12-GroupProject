@@ -34,3 +34,5 @@ Callum was on creating the file structure in the repo, and then agreed to move o
 Corinna had a couple issues setting up the git repo so had to redo the setup three or four times due to errors with git. Callum completed the file set up and pushed it all to the repo, small error with deploying on vercel due to the change of name with middleware, due to there being an update to next which changed the middleware name to proxy. It errored again due to needing to add the clerk keys to vercel. Vercel then deployed without issue.
 
 Corinna set up the tables, ready to move on to querying the database. Steph finished making edits and changes to the story and imported it to the repo. Callum set about implementing clerk.
+Corinna made several changes to the database through on going discussions with the team
+trying to get the tables to match the clerk set up. However, the clerk info wasnt rendering in the database tables so Corinna and Callum spent the afternoon searching the code for the reason why. Steph got working on the feedback form and comments for the users to talk about how they found the experience of the website.
