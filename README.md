@@ -36,3 +36,6 @@ Corinna had a couple issues setting up the git repo so had to redo the setup thr
 Corinna set up the tables, ready to move on to querying the database. Steph finished making edits and changes to the story and imported it to the repo. Callum set about implementing clerk.
 Corinna made several changes to the database through on going discussions with the team
 trying to get the tables to match the clerk set up. However, the clerk info wasnt rendering in the database tables so Corinna and Callum spent the afternoon searching the code for the reason why. Steph got working on the feedback form and comments for the users to talk about how they found the experience of the website.
+
+Tuesday:
+Started Tuesday by agreeing tasks but also asked for Bertie to help with our database issue. Callum had tried testing the issue by creating another repo and importing all the packages again (our error says its trying to call pg before its been initalized) and he had no issues. Corinna went through the trello board, added tasks based on tasks we'd already completed. Everyone did pull of the code to start from the same point.
