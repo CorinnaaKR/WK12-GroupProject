@@ -1,3 +1,4 @@
+import { useAuth } from "@clerk/nextjs";
 import {
   SignedIn,
   SignedOut,
@@ -5,6 +6,8 @@ import {
 import Link from "next/link";
 
 export default function Navbar() {
+  let currUser = useAuth();
+  let userID = currUser.userId;
   return (
     <>
       <SignedIn>
