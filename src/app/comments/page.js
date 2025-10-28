@@ -1,45 +1,44 @@
-"use client";
-
-import React, { useState } from "react";
+import { db } from "@/utils/dbConnection";
+import React from "react";
 
 export default function CommentsPage() {
-  const [name, setName] = useState(``);
-  const [email, setEmail] = useState(``);
-  const [comment, setComment] = useState(``);
+  async function handleCommentSave(formData) {
+    "use server";
 
-  //Form Validation
-  const emailValidity = (email) => {
-    return /\S+@\S+\.\S+/.test(email);
-  };
+    const name = formData.get("commenter_name");
+    const email = formData.get("commenter_email");
+    const comment = formData.get("comment_content");
 
-  const submitForm = (event) => {
-    event.preventDefault();
+    // Revised Form Validation
+    if (!name || !email || !comment) {
+      console.error("Missing input(s)");
+      return;
+    }
 
-    //Submit data
-    //! NEED TO PUT IN API CALL ONCE ESTABLISHED
-    console.log({ name, email, comment });
-
-    //Clear form
-    setName("");
-    setEmail("");
-    setComment("");
-  };
+    try {
+      await db.query(
+        `INSERT INTO comments (name, email, comment) VALUES ($1, $2, $3)`,
+        [name, email, comment]
+      );
+    } catch (error) {
+      console.error("Error unable to save to database:", error);
+    }
+  }
 
   return (
     <div>
       <h1>Comments</h1>
       <div>
         <h2>Leave a comment</h2>
-        <form onSubmit={submitForm}>
+        <form action={handleCommentSave}>
           <div>
             <label htmlFor="nameBox">Name:</label>
             <input
               required
               type="text"
               id="nameBox"
+              name="commenter_name"
               placeholder="Your Name"
-              value={name}
-              onChange={(event) => setName(event.target.value)}
             />
           </div>
 
@@ -49,9 +48,8 @@ export default function CommentsPage() {
               required
               type="email"
               id="emailBox"
+              name="commenter_email"
               placeholder="name@youremail.com"
-              value={email}
-              onChange={(event) => setEmail(event.target.value)}
             />
           </div>
 
@@ -60,9 +58,8 @@ export default function CommentsPage() {
             <textarea
               required
               id="commentBox"
+              name="comment_content"
               placeholder="Leave a comment"
-              value={comment}
-              onChange={(event) => setComment(event.target.value)}
             />
           </div>
 
