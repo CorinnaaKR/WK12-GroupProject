@@ -1,6 +1,6 @@
 import { SignedIn, SignedOut } from "@clerk/nextjs";
 import { currentUser } from "@clerk/nextjs/server";
-import Link from "next/link";
+import NavButton from "./NavButton";
 
 export default async function Navbar() {
   let currUser = await currentUser();
@@ -8,12 +8,18 @@ export default async function Navbar() {
   return (
     <>
       <SignedIn>
-        <Link href="/">Home</Link>
-        <Link href={`/user/${username}`}>Profile</Link>
-        <Link href={`/user/${username}/story`}>Story</Link>
+        <NavButton href="/" buttonText={"Home"}></NavButton>
+        <NavButton
+          href={`/user/${username}`}
+          buttonText={"Profile"}
+        ></NavButton>
+        <NavButton
+          href={`/user/${username}/story`}
+          buttonText={"Story"}
+        ></NavButton>
       </SignedIn>
       <SignedOut>
-        <Link href="/">Home</Link>
+        <NavButton href="/" buttonText={"Home"}></NavButton>
       </SignedOut>
     </>
   );
