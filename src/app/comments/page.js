@@ -1,9 +1,16 @@
 import { db } from "@/utils/dbConnection";
 import React from "react";
+import { auth, currentUser } from "@clerk/nextjs/server";
 
 export default function CommentsPage() {
+  const { userId } = auth();
+  if (userId) {
+  }
+
   async function handleCommentSave(formData) {
     "use server";
+
+    const user = await currentUser();
 
     const name = formData.get("commenter_name");
     const email = formData.get("commenter_email");
@@ -17,8 +24,8 @@ export default function CommentsPage() {
 
     try {
       await db.query(
-        `INSERT INTO comments (name, email, comment) VALUES ($1, $2, $3)`,
-        [name, email, comment]
+        `INSERT INTO comments (name, email, comment, users_id) VALUES ($1, $2, $3, $4)`,
+        [name, email, comment, user.id]
       );
     } catch (error) {
       console.error("Error unable to save to database:", error);

@@ -1,105 +1,124 @@
-"use client";
+import { db } from "@/utils/dbConnection";
+import { auth, currentUser } from "@clerk/nextjs/server";
 
-import React, { useState } from "react";
+export default function handleFeedbackSave() {
+  const { userId } = auth();
+  if (userId) {
+  }
 
-export default function FeedbackPage() {
-  const [name, setName] = useState(``);
-  const [email, setEmail] = useState(``);
-  const [comment, setComment] = useState(``);
+  async function handleFeedbackSubmission(formData) {
+    "use server";
 
-  //Form Validation
-  const emailValidity = (email) => {
-    return /\S+@\S+\.\S+/.test(email);
-  };
+    const user = await currentUser();
 
-  const submitForm = (event) => {
-    event.preventDefault();
+    const name = formData.get("nameBox");
+    const email = formData.get("emailBox");
+    const done_well = formData.get("wellBox");
+    const do_better = formData.get("betterBox");
+    const other = formData.get("otherBox");
+    const usefulString = formData.get("foundUseful");
 
-    //Submit data
-    //! NEED TO PUT IN API CALL ONCE ESTABLISHED
-    console.log({ name, email, comment });
+    const useful = usefulString === "true";
 
-    //Clear form
-    setName("");
-    setEmail("");
-    setComment("");
-  };
+    console.log(name);
+    console.log(email);
+    console.log(done_well);
+    console.log(do_better);
+    console.log(other);
+    console.log(usefulString);
+    console.log(useful);
+
+    try {
+      await db.query(
+        `INSERT INTO feedback (name, email, done_well, do_better, other, useful, users_id) VALUES ($1, $2, $3, $4, $5, $6, $7)`,
+        [name, email, done_well, do_better, other, useful, user.id]
+      );
+    } catch (error) {
+      console.error("Error unable to save to database:", error);
+    }
+  }
 
   return (
     <div>
       <h1>Feedback</h1>
       <div>
         <h2>Leave a comment</h2>
-        <form onSubmit={submitForm}>
+        <form action={handleFeedbackSubmission}>
           <div>
-            <label htmlFor="nameBox">Name:</label>
+            <label htmlFor="nameBox">Name: </label>
             <input
               required
+              name="nameBox"
               type="text"
               id="nameBox"
               placeholder="Your Name"
-              value={name}
-              onChange={(event) => setName(event.target.value)}
             />
           </div>
 
           <div>
-            <label htmlFor="emailBox">Email:</label>
+            <label htmlFor="emailBox">Email: </label>
             <input
               required
+              name="emailBox"
               type="email"
               id="emailBox"
-              placeholder="name@youremail.com"
-              value={email}
-              onChange={(event) => setEmail(event.target.value)}
+              placeholder="name@yourEmail.com"
             />
           </div>
 
           <div>
-            <label htmlFor="doneWell">What did we do well?:</label>
+            <label htmlFor="doneWell">What did we do well?: </label>
             <textarea
               required
+              name="wellBox"
               type="text"
               id="wellBox"
               placeholder="What were we great at?"
-              value={comment}
-              onChange={(event) => setComment(event.target.value)}
             />
           </div>
 
           <div>
-            <label htmlFor="doBetter">What could we do better?:</label>
+            <label htmlFor="doBetter">What could we do better?: </label>
             <textarea
               required
+              name="betterBox"
               type="text"
               id="betterBox"
               placeholder="How could we improve?"
-              value={comment}
-              onChange={(event) => setComment(event.target.value)}
             />
           </div>
 
           <div>
-            <label htmlFor="foundUseful">What did you find useful?:</label>
-            <textarea
+            <label>Did you find this useful?:</label>
+            <br />
+
+            <input
+              type="radio"
+              id="useful_yes"
+              name="foundUseful"
+              value="true"
               required
-              type="text"
-              id="usefulBox"
-              placeholder="What was the most useful part?"
-              value={comment}
-              onChange={(event) => setComment(event.target.value)}
             />
+            <label htmlFor="useful_yes">Yes</label>
+
+            <input
+              type="radio"
+              id="useful_no"
+              name="foundUseful"
+              value="false"
+              required
+            />
+            <label htmlFor="useful_no">No</label>
           </div>
 
           <div>
-            <label htmlFor="other">Any other feedback?:</label>
+            <label htmlFor="otherBox">Any other feedback?: </label>
             <textarea
               required
+              name="otherBox"
               type="text"
               id="otherBox"
               placeholder="We welcome all feedback!"
-              value={comment}
-              onChange={(event) => setComment(event.target.value)}
             />
           </div>
 
