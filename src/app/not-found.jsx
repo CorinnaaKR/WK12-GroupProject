@@ -6,7 +6,7 @@ export default function ErrorPage({ error }) {
     <>
       <h1>Oopsies. Error! </h1>
       <h2>Back the way you came, you little rebel ⚠️</h2>
-      <p>{error.message}</p>
+      <p>{error}</p>
       <Link href={"/"}>Go home</Link>
     </>
   );
