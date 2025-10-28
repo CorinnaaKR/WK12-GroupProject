@@ -8,7 +8,6 @@ export default async function Home() {
   currUser = await currentUser();
   let res = await db.query(`SELECT id FROM users`);
   let data = res.rows;
-  console.log(data);
   let userExists = false;
   for (let i = 0; i < data.length; i++) {
     if (currUser.id == data[i].id) {
