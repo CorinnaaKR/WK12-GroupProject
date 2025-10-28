@@ -39,3 +39,10 @@ trying to get the tables to match the clerk set up. However, the clerk info wasn
 
 Tuesday:
 Started Tuesday by agreeing tasks but also asked for Bertie to help with our database issue. Callum had tried testing the issue by creating another repo and importing all the packages again (our error says its trying to call pg before its been initalized) and he had no issues. Corinna went through the trello board, added tasks based on tasks we'd already completed. Everyone did pull of the code to start from the same point.
+
+We were still having issues with connecting the database with clerk. We double checked all the code, went through the error messages, Callum tried multiple fixes in a test repo he made and he couldnt replicate the errors. Corinna tried resetting the transaction pooler and database password but that didn't change anything. Corinna then tried moving the tables into a different database and then resetting the URL and password again. This seemed to fix the problem as clerk data then began appearing in the tables. While Corinna and Callum were doing that, Steph was working on the comment form to make it serverside ready for querying the database. Callum then moved to fixing an error with loging page.
+
+Tasks for the rest of the day:
+Callum - user profile
+Steph - feedback and comments forms
+Corinna - Error page
