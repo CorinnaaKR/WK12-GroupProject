@@ -1,19 +1,16 @@
-import { useAuth } from "@clerk/nextjs";
-import {
-  SignedIn,
-  SignedOut,
-} from "@clerk/nextjs/dist/types/components.server";
+import { SignedIn, SignedOut } from "@clerk/nextjs";
+import { currentUser } from "@clerk/nextjs/server";
 import Link from "next/link";
 
-export default function Navbar() {
-  let currUser = useAuth();
-  let userID = currUser.userId;
+export default async function Navbar() {
+  let currUser = await currentUser();
+  let username = currUser.username;
   return (
     <>
       <SignedIn>
         <Link href="/">Home</Link>
-        <Link href={`/user/${userID}`}>Profile</Link>
-        <Link href={`/user/${userID}/story`}>Story</Link>
+        <Link href={`/user/${username}`}>Profile</Link>
+        <Link href={`/user/${username}/story`}>Story</Link>
       </SignedIn>
       <SignedOut>
         <Link href="/">Home</Link>
