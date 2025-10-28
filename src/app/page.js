@@ -1,20 +1,24 @@
-
-
 "use client";
 import CommentsPage from "@/app/comments/page.js";
 import FeedbackPage from "@/app/feedback/page.js";
+import Footer from "@/components/Footer.jsx";
+
 import React, { useState } from "react";
 
 export default function Home() {
   return (
     <div>
+      <header />
 
       <h1>Welcome to H.E.L.I</h1>
       <h2>Helping Everyone Learn Interactively</h2>
-      <CommentsPage />
-      <FeedbackPage />
+      <p></p>
+      <Footer />
 
-import { currentUser } from "@clerk/nextjs/server";
+      {/* <CommentsPage />
+      <FeedbackPage /> */}
+
+      {/* import { currentUser } from "@clerk/nextjs/server";
 import { db } from "@/utils/dbConnection";
 export default async function Home() {
   let currUser = await currentUser();
@@ -26,7 +30,7 @@ export default async function Home() {
       currUser.lastName,
       currUser.emailAddresses[0].emailAddress,
     ]
-  );
+  ); */}
     </div>
   );
 }
