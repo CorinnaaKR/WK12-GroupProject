@@ -4,7 +4,7 @@ import InkButtons from "@/components/InkButtons";
 import "./story.css";
 
 export const metadata = {
-  title: "Interactive Story", // Becomes "Interactive Story | H.E.L.I."
+  title: "Interactive Story | Heli ", // Becomes "Interactive Story | Heli"
   description: "An interactive story about radicalisation",
 };
 
