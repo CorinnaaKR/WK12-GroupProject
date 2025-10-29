@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^6.34.0",
+    "inkjs": "^2.3.2",
     "next": "16.0.0",
     "pg": "^8.16.3",
     "react": "19.2.0",
