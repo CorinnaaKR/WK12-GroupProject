@@ -1,6 +1,6 @@
 // "use client";
 // import CommentsPage from "@/app/comments/page.js";
-import FeedbackPage from "@/app/feedback/page.js";
+// import FeedbackPage from "@/app/feedback/page.js";
 import Header from "@/components/Header.jsx";
 import Footer from "@/components/Footer.jsx";
 import { currentUser } from "@clerk/nextjs/server";
@@ -47,9 +47,17 @@ export default async function Home() {
     >
       {" "}
       <Header />
-      <h1>Welcome to H.e.l.i</h1>
+      <h1>Welcome to Heli</h1>
       <h2>Helping Everyone Learn Interactively</h2>
       <br />
+      <p>
+        Heli aids the UK Government’s Prevent strategy by offering an interactive platform to identify and assess at-risk individuals.
+      </p>
+      <br />
+      <p>
+        Through immersive fiction, it fosters active learning that improves recall and response. Future developments will introduce varied scenarios, branching narratives, and deeper insights to boost engagement, understanding, and decision-making.
+      </p>
+{/* 
       <p>
         Our Interactive learning portal focuses on the UK Government&apos;s
         counter-terrorism strategy known as Prevent. Through this, we aim to
@@ -76,9 +84,9 @@ export default async function Home() {
         situations, branching narratives, and greater depth of thinking to fully
         explore the scenarios presented, driving safety through learning,
         engagement and conscious decision making.{" "}
-      </p>
+      </p> */}
       {/* <CommentsPage /> */}
-      <FeedbackPage />
+      {/* <FeedbackPage /> */}
       <Footer />
     </div>
   );
