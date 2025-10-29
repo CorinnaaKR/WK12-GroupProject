@@ -46,3 +46,16 @@ Tasks for the rest of the day:
 Callum - user profile
 Steph - feedback and comments forms
 Corinna - Error page
+
+Wednesday
+
+We started Wednesday all pitching to solve the error problem with the sotry when it loads. Callum tried addiung a defer but that didnt change anything. Bertie suggested using an iframe which we tried but that created a duplicate of the nav bar, and the code still errored. We also asked joe and he had a look through our code, pointed out that there was a loop around the sign up page, and then suggested we use 'useState' and 'onLoad'. We made those changes and it fixed the problem. Corinna agreed to work on the metadata, and also design a logo to use in the metadata. Steph agreed to look at completeing the home page and about page.
+
+Before lunch we managed to solve the story load error, Corinna finished the metadata and a logo - although encountered an error when trying to add metadata to the story page because its a page that has 'use client'so Corinna removed it and just kept the metadata on the layout page. Steph created the extra pages and added them to the navbar ready for coding after lunch.
+
+After lunch agreed tasks:
+Steph - Home Page & About Page
+Corinna - Resources Page
+Callum - Styling the story page and adding instructions for the snippets and how to use them to the user profile page.
+
+Corinna ran npm run dev and was greeted with an error saying the page couldnt connect due to clerk being keyless and Econnrefused. When the error showed on the page is came down to there being an issue with the naming of the middleware file being called proxy (part of an update in vs code). Corinna changed the file name back to middleware and the page ran without issues. However Callum and Steph found they could both run the page with the file named proxy without issues.
