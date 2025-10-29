@@ -27,7 +27,7 @@ export const metadata = {
     description: "Helping everyone learn interactively!",
     type: "website",
     url: "https://wk-12-group-project.vercel.app/",
-    images: ["src/assets/Screenshot 2025-10-29 110010.png"],
+    images: ["src/assets/logo-white-bg.png"],
   },
 };
 
