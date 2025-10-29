@@ -2,11 +2,8 @@
 import Script from "next/script";
 import InkButtons from "@/components/InkButtons";
 import "./story.css";
-import { useState } from "react";
 
 export default function StoryPage() {
-  const [inkLoaded, setInkLoaded] = useState(false);
-  const [storyLoaded, setStoryLoaded] = useState(false);
   return (
     <main className="pageContainer">
       <section className="storySection">
@@ -20,28 +17,22 @@ export default function StoryPage() {
         strategy="afterInteractive"
         onLoad={() => {
           console.log("ink.js loaded");
-          setInkLoaded(true);
         }}
       />
-      {inkLoaded && (
-        <Script
-          src="/ink-files/firstDraft.js"
-          strategy="afterInteractive"
-          onLoad={() => {
-            console.log("firstDraft.js loaded");
-            setStoryLoaded(true);
-          }}
-        />
-      )}
-      {storyLoaded && (
-        <Script
-          src="/ink-files/main.js"
-          strategy="afterInteractive"
-          onLoad={() => {
-            console.log("main.js loaded and executed");
-          }}
-        />
-      )}
+      <Script
+        src="/ink-files/firstDraft.js"
+        strategy="afterInteractive"
+        onLoad={() => {
+          console.log("firstDraft.js loaded");
+        }}
+      />
+      <Script
+        src="/ink-files/main.js"
+        strategy="afterInteractive"
+        onLoad={() => {
+          console.log("main.js loaded and executed");
+        }}
+      />
     </main>
   );
 }
