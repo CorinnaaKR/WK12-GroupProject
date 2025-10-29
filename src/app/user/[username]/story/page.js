@@ -4,11 +4,6 @@ import InkButtons from "@/components/InkButtons";
 import "./story.css";
 import { useState } from "react";
 
-export const metadata = {
-  title: "Heli - story",
-  description: "An interactive story about radicalisation",
-};
-
 export default function StoryPage() {
   const [inkLoaded, setInkLoaded] = useState(false);
   const [storyLoaded, setStoryLoaded] = useState(false);
