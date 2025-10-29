@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 
 export default function InkButtons() {
   const [storedWords, setStoredWords] = useState([]);
+
   useEffect(() => {
     let temp = localStorage.getItem("storedWords");
     if (temp != null) {
@@ -11,6 +12,7 @@ export default function InkButtons() {
       setStoredWords(tempArr);
     }
   }, [setStoredWords]);
+
   useEffect(() => {
     let pollingeIntervalId = setInterval(() => {
       let wordsStr = "";
@@ -28,6 +30,9 @@ export default function InkButtons() {
     window.getSelection() != "" && window.getSelection() != " "
       ? setStoredWords([...storedWords, `${window.getSelection()}`])
       : null;
+  }
+  function deleteSnippet(i) {
+    setStoredWords(storedWords.toSpliced(i, 1));
   }
   return (
     <>
@@ -65,6 +70,7 @@ export default function InkButtons() {
               className="border-solid border-black border w-full"
               rows={2}
             ></textarea>
+            <button onClick={() => deleteSnippet(i)}>delete snippet</button>
           </div>
         ))}
       </section>
