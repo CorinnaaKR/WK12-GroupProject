@@ -79,14 +79,12 @@ h2 {
   width: 100%;
   top: 0;
   left: 0;
-  margin-top: 24px;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 980px) {
   .outerContainer {
-    margin-top: 44px;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -190,7 +188,7 @@ img {
   text-align: center;
   padding-bottom: 6px;
   position: fixed;
-  right: 14px;
+  left: 14px;
   top: 4px;
   user-select: none;
   background: white;
@@ -269,7 +267,6 @@ body.dark {
   overflow-y: scroll;
   border: 1px solid black;
   margin: 10px;
-  margin-top: 44px;
   padding: 10px;
 }
 .pageContainer {
@@ -294,7 +291,6 @@ body.dark {
     overflow-y: scroll;
     border: 1px solid black;
     margin: 10px;
-    margin-top: 44px;
     padding: 10px;
     font-size: 1rem;
     display: flex;
