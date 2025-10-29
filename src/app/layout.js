@@ -53,7 +53,7 @@ export default function RootLayout({ children }) {
               <Navbar />
             </SignedIn>
           </header>
-          <main className="flex-grow">
+          <main className="grow">
              {children}
           </main>
         
