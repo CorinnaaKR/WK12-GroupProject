@@ -44,5 +44,15 @@ We were still having issues with connecting the database with clerk. We double c
 
 Tasks for the rest of the day:
 Callum - user profile
-Steph - feedback and comments forms
+Steph - feedback and comments forms.
 Corinna - Error page
+
+Before we set about our new tasks, we did a run checking the queries for the comments and feedback form. However, Corinna noticed that while the comments were appearing in the database, the user.id was coming back null. Steph set about trying to fix that, while to be on the safe side Corinna added a join for the feedback table and comments tables to the users table just to be on the safe side. The whole team collaborated on solving the error. Once the user idea was displaying in the comments table, Corinna and Steph set about trying to get the feedback table to do the same thing. While Steph worked on the feedback table, Corinna did the error page, and Callum noticed that the story page was initally erroring before loading so set about trying to resolve that.
+
+We moved on to troubleshooting the form as Steph encountered an error that pointed to middleware. We asked Bertie for help, and we think it was due to not being done in the server. We managed to fix it, and then had the same issue as with the comments in that the users.id came back null. Steph was able to fix that and then we had the feedback, the comments and the users all displaying in the database. (Woohoo! Go Team!),
+
+Callum discovered a infrequent error appearing in the console happening when the story for first loads, it errors but is okay once the page is refreshed. Callum tried several troubleshoot methods - eventually we asked Bertie to help, but we'll be picking it up again tomorrow.
+
+Wednesday
+Started the day with another look at the error - callum tried adding defer, as suggested by joe but it didnt help, we were still getting a hydration error. Bertie suggested putting it in an iframe, which worked but produced two navbars. Joe then had a look at our code and found that we needed 'useState' and 'onLoad'. We made the changes and that seemed to work.
+Joe mentioned there was a loop around the signup page. Callum said he would work on that, Steph will be working on the home page and about page. Corinna will be working on creating a logo, adding the meta data and creating a resources page.
