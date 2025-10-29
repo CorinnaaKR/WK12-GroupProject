@@ -9,6 +9,7 @@ import {
   UserButton,
 } from "@clerk/nextjs";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -52,7 +53,24 @@ export default function RootLayout({ children }) {
               <Navbar />
             </SignedIn>
           </header>
-          {children}
+          <main className="flex-grow">
+             {children}
+          </main>
+        
+          <div className="footerPlacement">
+             <div
+      style={{
+  textAlign: "center",
+        maxWidth: "800px",
+        margin: "0 auto",
+        padding: "20px",
+        border: "2px solid #2BD872",
+        borderRadius: "10px"
+      }}
+    >
+             <Footer />
+          </div>
+          </div>
         </body>
       </html>
     </ClerkProvider>

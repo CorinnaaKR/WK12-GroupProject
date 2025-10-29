@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <>
-      <h1>Welcome to Heli</h1>
+      <h1><b>Welcome to Heli</b></h1>
       {/* about us */}
       {/* resources */}
       {/* story */}
