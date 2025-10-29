@@ -1,13 +1,14 @@
 export default function AboutPage() {
   return (
-    <div  style={{
+    <div style={{
         textAlign: "center",
         maxWidth: "800px",
         margin: "0 auto",
         padding: "20px",
-        border: "1px solid #ccc",
+        border: "2px solid #2BD872",
+        borderRadius: "10px"
       }}>
-      <h1>About Heli</h1>
+      <h1><b>About Heli</b></h1>
          <p>
         Our Interactive learning portal focuses on the UK Government&apos;s
         counter-terrorism strategy known as Prevent. Through this, we aim to
@@ -20,7 +21,7 @@ export default function AboutPage() {
         and active approach to this training to further cement the importance of
         this training in the user&apos;s mind by immersing them in the situation
         and how they might handle this interaction as opposed to static learning
-        such as leaflets, documentation or slides.
+        such as leaflet or slides.
       </p>
       <br />
       <p>
@@ -35,6 +36,7 @@ export default function AboutPage() {
         explore the scenarios presented, driving safety through learning,
         engagement and conscious decision making.{" "}
       </p>
+
     </div>
   );
 }
