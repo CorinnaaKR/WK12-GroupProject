@@ -47,8 +47,7 @@ export default async function Home() {
     >
       {" "}
       <Header />
-      <h1>Welcome to Heli</h1>
-      <h2>Helping Everyone Learn Interactively</h2>
+      <h2><b>Helping Everyone Learn Interactively</b></h2>
       <br />
       <p>
         Heli aids the UK Government’s Prevent strategy by offering an interactive platform to identify and assess at-risk individuals.
@@ -58,33 +57,7 @@ export default async function Home() {
         Through immersive fiction, it fosters active learning that improves recall and response. Future developments will introduce varied scenarios, branching narratives, and deeper insights to boost engagement, understanding, and decision-making.
       </p>
 {/* 
-      <p>
-        Our Interactive learning portal focuses on the UK Government&apos;s
-        counter-terrorism strategy known as Prevent. Through this, we aim to
-        provide an engaging means to help identify or assess vulnerable
-        individuals who may be at risk of radicalisation.
-      </p>
-      <br />
-      <p>
-        Through the use of interactive fiction, we aim to bring a conscientious
-        and active approach to this training to further cement the importance of
-        this training in the user&apos;s mind by immersing them in the situation
-        and how they might handle this interaction as opposed to static learning
-        such as leaflets, documentation or slides.
-      </p>
-      <br />
-      <p>
-        Through this increased engagement, we hope to see users take this
-        information onboard to a greater degree, allowing them to recall the
-        information and act appropriately in the moment.
-      </p>
-      <br />
-      <p>
-        As the programme expands, we aim to include a greater variety of
-        situations, branching narratives, and greater depth of thinking to fully
-        explore the scenarios presented, driving safety through learning,
-        engagement and conscious decision making.{" "}
-      </p> */}
+   
       {/* <CommentsPage /> */}
       {/* <FeedbackPage /> */}
       <Footer />
