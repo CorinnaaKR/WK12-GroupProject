@@ -2,6 +2,12 @@
 import Script from "next/script";
 import InkButtons from "@/components/InkButtons";
 import "./story.css";
+
+export const metadata = {
+  title: "Interactive Story", // Becomes "Interactive Story | H.E.L.I."
+  description: "An interactive story about radicalisation",
+};
+
 export default function StoryPage() {
   return (
     <main className="pageContainer">
