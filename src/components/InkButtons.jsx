@@ -60,17 +60,25 @@ export default function InkButtons() {
       <section id="word-storage" className="">
         <h2>Snippets:</h2>
         {storedWords.map((word, i) => (
-          <div key={i}>
+          <div
+            key={i}
+            className="border border-solid border-black flex flex-col items-center"
+          >
             {i == 0 ? (
               <p className="p-2.5 storedWord topStoredWord">{word}</p>
             ) : (
               <p className="p-2.5 storedWord">{word}</p>
             )}
-            <textarea
-              className="border-solid border-black border w-full"
+            {/* <textarea
+              className="p-2.5 border-solid border-black border w-[80%]"
               rows={2}
-            ></textarea>
-            <button onClick={() => deleteSnippet(i)}>delete snippet</button>
+            ></textarea> */}
+            <button
+              className="border border-solid border-black m-2.5 pl-2.5 pr-2.5"
+              onClick={() => deleteSnippet(i)}
+            >
+              delete snippet
+            </button>
           </div>
         ))}
       </section>

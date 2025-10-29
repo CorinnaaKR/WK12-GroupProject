@@ -189,7 +189,7 @@ img {
   padding-bottom: 6px;
   position: fixed;
   left: 14px;
-  top: 4px;
+  top: 24px;
   user-select: none;
   background: white;
   transition: color 0.6s, background 0.6s;
@@ -267,12 +267,14 @@ body.dark {
   overflow-y: scroll;
   border: 1px solid black;
   margin: 10px;
+  margin-top: 0;
   padding: 10px;
+  height: calc(100vh - 100px);
 }
 .pageContainer {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  height: calc(100vh - 48px);
 }
 .storySection {
   width: 80%;
@@ -284,7 +286,7 @@ body.dark {
   .pageContainer {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: calc(100vh - 48px);
   }
   #word-storage {
     width: calc(100vw - 20px);
