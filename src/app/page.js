@@ -12,10 +12,12 @@ export default async function Home() {
   let res = await db.query(`SELECT id FROM users`);
   let data = res.rows;
   let userExists = false;
-  for (let i = 0; i < data.length; i++) {
-    if (currUser.id == data[i].id) {
-      userExists = true;
-      break;
+  if (currUser != undefined) {
+    for (let i = 0; i < data.length; i++) {
+      if (currUser.id == data[i].id) {
+        userExists = true;
+        break;
+      }
     }
   }
   if (!userExists) {
