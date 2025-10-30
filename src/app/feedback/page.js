@@ -63,7 +63,8 @@ export default function handleFeedbackSave() {
         </p>
         <form action={handleFeedbackSubmission}>
           <div>
-            <label htmlFor="nameBox" style={{ fontSize: "1.25rem" }}>
+
+            <label htmlFor="nameBox" aria-label="insert name" style={{ fontSize: "1.25rem" }}>
               Name:
             </label>
             <input
@@ -85,7 +86,8 @@ export default function handleFeedbackSave() {
           </div>
 
           <div>
-            <label htmlFor="emailBox" style={{ fontSize: "1.25rem" }}>
+            <label htmlFor="emailBox"               aria-label="insert email" style={{ fontSize: "1.25rem" }}>
+
               Email:
             </label>
             <input
@@ -106,7 +108,8 @@ export default function handleFeedbackSave() {
           </div>
 
           <div>
-            <label htmlFor="doneWell" style={{ fontSize: "1.25rem" }}>
+            <label htmlFor="doneWell"               aria-label="what were we great at??"
+ style={{ fontSize: "1.25rem" }}>
               What did we do well?:
             </label>
             <textarea
@@ -127,7 +130,8 @@ export default function handleFeedbackSave() {
           </div>
 
           <div>
-            <label htmlFor="doBetter" style={{ fontSize: "1.25rem" }}>
+            <label htmlFor="doBetter"               aria-label="how could we improve?"
+ style={{ fontSize: "1.25rem" }}>
               What could we do better?:{" "}
             </label>
             <textarea
@@ -148,7 +152,9 @@ export default function handleFeedbackSave() {
           </div>
 
           <div>
-            <label htmlFor="otherBox" style={{ fontSize: "1.25rem" }}>
+            <label htmlFor="otherBox"               aria-label="other feedback"
+ style={{ fontSize: "1.25rem" }}>
+tyle={{ fontSize: "20px" }}
               Any other feedback?:{" "}
             </label>
             <textarea
@@ -181,7 +187,9 @@ export default function handleFeedbackSave() {
               value="true"
               required
             />
-            <label htmlFor="useful_yes" style={{ padding: "0.438rem" }}>
+
+            <label htmlFor="useful_yes"               aria-label="select option: yes"
+ style={{ padding: "0.438rem" }}>
               Yes{" "}
             </label>
 
@@ -192,12 +200,17 @@ export default function handleFeedbackSave() {
               value="false"
               required
             />
-            <label htmlFor="useful_no" style={{ padding: "0.438rem" }}>
+            <label htmlFor="useful_no"               aria-label="select option: no"
+style={{ padding: "0.438rem" }}>
               No
             </label>
           </div>
 
-          <button type="submit" class="confirm-button">
+          <button
+            type="submit"
+            aria-label="submit button"
+            className="confirm-button"
+          >
             Submit Feedback
           </button>
         </form>
