@@ -3,6 +3,7 @@ import Script from "next/script";
 import InkButtons from "@/components/InkButtons";
 import "./story.css";
 
+
 export default function StoryPage() {
   return (
     <main className="pageContainer">
@@ -14,25 +15,19 @@ export default function StoryPage() {
       <InkButtons />
       <Script
         src="/ink-files/ink.js"
-        strategy="afterInteractive"
-        onLoad={() => {
+        strategy="beforeInteractive"
+        onReady={() => {
           console.log("ink.js loaded");
         }}
       />
-
       <Script
-        src="/ink-files/firstDraft.js"
-        strategy="afterInteractive"
-        onLoad={() => {
-          console.log("firstDraft.js loaded");
-        }}
-      />
-      <Script
+        type="module"
         src="/ink-files/main.js"
         strategy="afterInteractive"
-        onLoad={() => {
+        onReady={() => {
           console.log("main.js loaded and executed");
         }}
+        crossOrigin="use-credentials"
       />
     </main>
   );

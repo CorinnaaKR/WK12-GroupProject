@@ -13,6 +13,8 @@ export default async function Navbar() {
         <Link href={`/user/${username}`}>Profile</Link>
         <Link href={`/user/${username}/story`}>Story</Link>
         <Link href="/resources">Resources</Link>
+        <Link href="/feedback">Feedback</Link>
+
 
         
       </SignedIn>
@@ -21,6 +23,8 @@ export default async function Navbar() {
         <Link href="/">About</Link>
         <Link href={`/user/${username}/story`}>Story</Link>
         <Link href="/resources">Resources</Link>
+        <Link href="/feedback">Feedback</Link>
+
       </SignedOut>
     </>
   );

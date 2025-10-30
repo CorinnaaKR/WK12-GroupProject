@@ -1,11 +1,10 @@
-console.log("draft");
-export var storyContent = {
-  inkVersion: 21,
-  root: [
+{
+  "inkVersion": 21,
+  "root": [
     [{ "->": "message" }, ["done", { "#f": 5, "#n": "g-0" }], null],
     "done",
     {
-      message: [
+      "message": [
         [
           "^You recieve a message from a school friend's sister. She's concerned about her brother because he's been acting out of character.",
           "\n",
@@ -26,14 +25,14 @@ export var storyContent = {
             [{ "#n": "$r1" }],
             "/str",
             "/ev",
-            { "*": ".^.^.c-0", flg: 18 },
+            { "*": ".^.^.c-0", "flg": 18 },
             {
-              s: [
-                '^"Oh no, what\'s going on?"',
-                { "->": "$r", var: true },
-                null,
-              ],
-            },
+              "s": [
+                "^\"Oh no, what's going on?\"",
+                { "->": "$r", "var": true },
+                null
+              ]
+            }
           ],
           [
             "ev",
@@ -44,14 +43,14 @@ export var storyContent = {
             [{ "#n": "$r1" }],
             "/str",
             "/ev",
-            { "*": ".^.^.c-1", flg: 18 },
+            { "*": ".^.^.c-1", "flg": 18 },
             {
-              s: [
+              "s": [
                 "^\"We haven't spoke for a while, are you sure I'm the right person to speak to?\"",
-                { "->": "$r", var: true },
-                null,
-              ],
-            },
+                { "->": "$r", "var": true },
+                null
+              ]
+            }
           ],
           {
             "c-0": [
@@ -63,7 +62,7 @@ export var storyContent = {
               [{ "#n": "$r2" }],
               "\n",
               { "->": "context" },
-              { "#f": 5 },
+              { "#f": 5 }
             ],
             "c-1": [
               "ev",
@@ -75,13 +74,13 @@ export var storyContent = {
               "\n",
               { "->": "context" },
               "done",
-              { "#f": 5 },
-            ],
-          },
+              { "#f": 5 }
+            ]
+          }
         ],
-        { "#f": 1 },
+        { "#f": 1 }
       ],
-      context: [
+      "context": [
         "#",
         "^sender: LazloSister",
         "/#",
@@ -104,21 +103,21 @@ export var storyContent = {
         "\n",
         { "->": "Visiting_Lazlo" },
         "done",
-        { "#f": 1 },
+        { "#f": 1 }
       ],
-      Visiting_Lazlo: [
+      "Visiting_Lazlo": [
         [
           "^You tried messaging Lazlo, but as Lilly said, he ignored the messages. Instead, you turn up at his house unexpectedly, and knock on the door.",
           "\n",
           "^When Lazlo answers the door, the first thing you notice is that Lazlo is growing out his beard. You find this suprising because you know he has never been a fan of beards for hygiene reasons.",
           "\n",
-          '^"Hey man, long time no see!"',
+          "^\"Hey man, long time no see!\"",
           "\n",
-          '^"Oh, hi. Wasn\'t expecting you." Scowls Lazlo. You laugh off the tension.',
+          "^\"Oh, hi. Wasn't expecting you.\" Scowls Lazlo. You laugh off the tension.",
           "\n",
-          '^"Thought I would swing by so we could catch up. It\'s been too long."',
+          "^\"Thought I would swing by so we could catch up. It's been too long.\"",
           "\n",
-          '^"I don\'t really want guests." Mutters Lazlo',
+          "^\"I don't really want guests.\" Mutters Lazlo",
           "\n",
           [
             "ev",
@@ -129,14 +128,14 @@ export var storyContent = {
             [{ "#n": "$r1" }],
             "/str",
             "/ev",
-            { "*": ".^.^.c-0", flg: 18 },
+            { "*": ".^.^.c-0", "flg": 18 },
             {
-              s: [
+              "s": [
                 "^Persuade him. \"I know I'm putting you on the spot, but it's been too long and I think we shoud catch up over coffee.\"",
-                { "->": "$r", var: true },
-                null,
-              ],
-            },
+                { "->": "$r", "var": true },
+                null
+              ]
+            }
           ],
           [
             "ev",
@@ -147,14 +146,14 @@ export var storyContent = {
             [{ "#n": "$r1" }],
             "/str",
             "/ev",
-            { "*": ".^.^.c-1", flg: 18 },
+            { "*": ".^.^.c-1", "flg": 18 },
             {
-              s: [
-                '^Push past him with a clap on the arm. "Guest? You\'re like a brother to me"',
-                { "->": "$r", var: true },
-                null,
-              ],
-            },
+              "s": [
+                "^Push past him with a clap on the arm. \"Guest? You're like a brother to me\"",
+                { "->": "$r", "var": true },
+                null
+              ]
+            }
           ],
           {
             "c-0": [
@@ -166,7 +165,7 @@ export var storyContent = {
               [{ "#n": "$r2" }],
               "\n",
               { "->": "chat" },
-              { "#f": 5 },
+              { "#f": 5 }
             ],
             "c-1": [
               "ev",
@@ -178,22 +177,22 @@ export var storyContent = {
               "\n",
               { "->": "chat" },
               "done",
-              { "#f": 5 },
-            ],
-          },
+              { "#f": 5 }
+            ]
+          }
         ],
-        { "#f": 1 },
+        { "#f": 1 }
       ],
-      chat: [
+      "chat": [
         "^You enter, and the news blaring in the background about threats to national security. Lazlo mutes the tv. Your eyes stray to the posters/newspaper articles on the wall.",
         "\n",
-        '^"Do you want a drink?" Asks Lazlo, frowning and unsure of what to do with himself.',
+        "^\"Do you want a drink?\" Asks Lazlo, frowning and unsure of what to do with himself.",
         "\n",
         { "->": "drinks" },
         "done",
-        { "#f": 1 },
+        { "#f": 1 }
       ],
-      drinks: [
+      "drinks": [
         [
           [
             "ev",
@@ -207,10 +206,14 @@ export var storyContent = {
             "^You ask for water so you can get straight to talking.",
             "/str",
             "/ev",
-            { "*": ".^.^.c-0", flg: 22 },
+            { "*": ".^.^.c-0", "flg": 22 },
             {
-              s: ['^"A water please mate." ', { "->": "$r", var: true }, null],
-            },
+              "s": [
+                "^\"A water please mate.\" ",
+                { "->": "$r", "var": true },
+                null
+              ]
+            }
           ],
           [
             "ev",
@@ -221,10 +224,14 @@ export var storyContent = {
             [{ "#n": "$r1" }],
             "/str",
             "/ev",
-            { "*": ".^.^.c-1", flg: 18 },
+            { "*": ".^.^.c-1", "flg": 18 },
             {
-              s: ['^"A coffee please mate." ', { "->": "$r", var: true }, null],
-            },
+              "s": [
+                "^\"A coffee please mate.\" ",
+                { "->": "$r", "var": true },
+                null
+              ]
+            }
           ],
           {
             "c-0": [
@@ -239,7 +246,7 @@ export var storyContent = {
               "^You notice the newspaper articles on the coffee table, and  what looks like new religious paraphenalia in the corner.",
               "\n",
               { "->": "work" },
-              { "#f": 5 },
+              { "#f": 5 }
             ],
             "c-1": [
               "ev",
@@ -257,13 +264,13 @@ export var storyContent = {
               "^Lazlo returns with your drink, then hovers as you sip it, he casts suspicious looks around the room and fidgets with his appearance.",
               "\n",
               "done",
-              { "#f": 5 },
-            ],
-          },
+              { "#f": 5 }
+            ]
+          }
         ],
-        { "#f": 1 },
+        { "#f": 1 }
       ],
-      work: [
+      "work": [
         [
           [
             "ev",
@@ -274,8 +281,10 @@ export var storyContent = {
             [{ "#n": "$r1" }],
             "/str",
             "/ev",
-            { "*": ".^.^.c-0", flg: 18 },
-            { s: ['^"How\'s work been?"', { "->": "$r", var: true }, null] },
+            { "*": ".^.^.c-0", "flg": 18 },
+            {
+              "s": ["^\"How's work been?\"", { "->": "$r", "var": true }, null]
+            }
           ],
           {
             "c-0": [
@@ -286,16 +295,16 @@ export var storyContent = {
               { "->": ".^.^.0.s" },
               [{ "#n": "$r2" }],
               "\n",
-              '^Lazlo: "They fired me after I reported two of my colleagues for workplace bullying and harrassment."',
+              "^Lazlo: \"They fired me after I reported two of my colleagues for workplace bullying and harrassment.\"",
               "\n",
               { "->": "church" },
-              { "#f": 5 },
-            ],
-          },
+              { "#f": 5 }
+            ]
+          }
         ],
-        { "#f": 1 },
+        { "#f": 1 }
       ],
-      church: [
+      "church": [
         [
           [
             "ev",
@@ -306,8 +315,8 @@ export var storyContent = {
             [{ "#n": "$r1" }],
             "/str",
             "/ev",
-            { "*": ".^.^.c-0", flg: 18 },
-            { s: ['^"How\'s church?"', { "->": "$r", var: true }, null] },
+            { "*": ".^.^.c-0", "flg": 18 },
+            { "s": ["^\"How's church?\"", { "->": "$r", "var": true }, null] }
           ],
           {
             "c-0": [
@@ -320,15 +329,16 @@ export var storyContent = {
               "\n",
               "^\"Don't go anymore.\" Replies Lazlo. \"I've started praying with some new guys and they are so inclusive and welcoming. They made me see that my old church wasn't a good place for growth. I've found new purpose in this church\"",
               "\n",
+              { "->": "work" },
               { "->": "bonding" },
               "done",
-              { "#f": 5 },
-            ],
-          },
+              { "#f": 5 }
+            ]
+          }
         ],
-        { "#f": 1 },
+        { "#f": 1 }
       ],
-      bonding: [
+      "bonding": [
         [
           [
             "ev",
@@ -339,14 +349,14 @@ export var storyContent = {
             [{ "#n": "$r1" }],
             "/str",
             "/ev",
-            { "*": ".^.^.c-0", flg: 18 },
+            { "*": ".^.^.c-0", "flg": 18 },
             {
-              s: [
+              "s": [
                 "^ask more... \"I'm sorry to hear about that. Sounds like you've had a really rough time. Do you want to talk about it?\" ",
-                { "->": "$r", var: true },
-                null,
-              ],
-            },
+                { "->": "$r", "var": true },
+                null
+              ]
+            }
           ],
           [
             "ev",
@@ -357,14 +367,14 @@ export var storyContent = {
             [{ "#n": "$r1" }],
             "/str",
             "/ev",
-            { "*": ".^.^.c-1", flg: 18 },
+            { "*": ".^.^.c-1", "flg": 18 },
             {
-              s: [
+              "s": [
                 "^sympathetic response. \"Mate, that sounds rough. I'm sorry to hear it's been rough.\"",
-                { "->": "$r", var: true },
-                null,
-              ],
-            },
+                { "->": "$r", "var": true },
+                null
+              ]
+            }
           ],
           {
             "c-0": [
@@ -378,7 +388,7 @@ export var storyContent = {
               "^Lazlo: \"S'alright. I'm part of something bigger now.\"",
               "\n",
               { "->": "investigate" },
-              { "#f": 5 },
+              { "#f": 5 }
             ],
             "c-1": [
               "ev",
@@ -388,17 +398,17 @@ export var storyContent = {
               { "->": ".^.^.1.s" },
               [{ "#n": "$r2" }],
               "\n",
-              '^"Yeah well, I\'m part of something bigger now." Smirks Lazlo.',
+              "^\"Yeah well, I'm part of something bigger now.\" Smirks Lazlo.",
               "\n",
               { "->": "investigate" },
               "done",
-              { "#f": 5 },
-            ],
-          },
+              { "#f": 5 }
+            ]
+          }
         ],
-        { "#f": 1 },
+        { "#f": 1 }
       ],
-      investigate: [
+      "investigate": [
         [
           "^Lazlo's phone sits on the coffee table, and keeps vibrating. You notice its for group meetups for a group of the same name as those in the newspaper articles with the same symbol as the post on the wall. Lazlo sees you looking, and snatches his phone back.",
           "\n",
@@ -411,14 +421,14 @@ export var storyContent = {
             [{ "#n": "$r1" }],
             "/str",
             "/ev",
-            { "*": ".^.^.c-0", flg: 18 },
+            { "*": ".^.^.c-0", "flg": 18 },
             {
-              s: [
-                '^Ask Lazlo about the group. "Part of a new group, ay? Tell me about them." You ask, interested.',
-                { "->": "$r", var: true },
-                null,
-              ],
-            },
+              "s": [
+                "^Ask Lazlo about the group. \"Part of a new group, ay? Tell me about them.\" You ask, interested. ",
+                { "->": "$r", "var": true },
+                null
+              ]
+            }
           ],
           {
             "c-0": [
@@ -429,17 +439,16 @@ export var storyContent = {
               { "->": ".^.^.2.s" },
               [{ "#n": "$r2" }],
               "\n",
-              '^"It\'s just this group I joined just by chance and one of the guys reached out and has been really support. He took me under his wing and the community made me feel so welcome. Their church really gives you purpose."',
+              "^\"It's just this group I joined just by chance and one of the guys reached out and has been really support. He took me under his wing and the community made me feel so welcome. Their church really gives you purpose.\"",
               "\n",
-              { "->": "SUPPORT" },
-              "done",
-              { "#f": 5 },
-            ],
-          },
+              { "->": "family" },
+              { "#f": 5 }
+            ]
+          }
         ],
-        { "#f": 1 },
+        { "#f": 1 }
       ],
-      family: [
+      "family": [
         [
           [
             "ev",
@@ -450,8 +459,10 @@ export var storyContent = {
             [{ "#n": "$r1" }],
             "/str",
             "/ev",
-            { "*": ".^.^.c-0", flg: 18 },
-            { s: ['^"How\'s the family?"', { "->": "$r", var: true }, null] },
+            { "*": ".^.^.c-0", "flg": 18 },
+            {
+              "s": ["^\"How's the family?\"", { "->": "$r", "var": true }, null]
+            }
           ],
           {
             "c-0": [
@@ -468,13 +479,14 @@ export var storyContent = {
               "\n",
               { "->": "investigate" },
               "done",
-              { "#f": 5 },
-            ],
-          },
+              { "->": "SUPPORT" },
+              { "#f": 5 }
+            ]
+          }
         ],
-        { "#f": 1 },
+        { "#f": 1 }
       ],
-      SUPPORT: [
+      "SUPPORT": [
         [
           "^Thinking over everything you know, have learnt and what Lazlo has said, and the text you've highlighted, what do you do next?",
           "\n",
@@ -487,14 +499,14 @@ export var storyContent = {
             [{ "#n": "$r1" }],
             "/str",
             "/ev",
-            { "*": ".^.^.c-0", flg: 18 },
+            { "*": ".^.^.c-0", "flg": 18 },
             {
-              s: [
+              "s": [
                 "^Keep communication open and non-judgemental - because you know isolation can keep radicalisation worse?",
-                { "->": "$r", var: true },
-                null,
-              ],
-            },
+                { "->": "$r", "var": true },
+                null
+              ]
+            }
           ],
           {
             "c-0": [
@@ -506,13 +518,13 @@ export var storyContent = {
               [{ "#n": "$r2" }],
               "\n",
               { "->": "confident" },
-              { "#f": 5 },
-            ],
-          },
+              { "#f": 5 }
+            ]
+          }
         ],
-        { "#f": 1 },
+        { "#f": 1 }
       ],
-      confident: [
+      "confident": [
         [
           [
             "ev",
@@ -523,14 +535,14 @@ export var storyContent = {
             [{ "#n": "$r1" }],
             "/str",
             "/ev",
-            { "*": ".^.^.c-0", flg: 18 },
+            { "*": ".^.^.c-0", "flg": 18 },
             {
-              s: [
+              "s": [
                 "^Encourage Lazlo to talk about what is really bothering him, and where he is getting his information?",
-                { "->": "$r", var: true },
-                null,
-              ],
-            },
+                { "->": "$r", "var": true },
+                null
+              ]
+            }
           ],
           {
             "c-0": [
@@ -542,13 +554,13 @@ export var storyContent = {
               [{ "#n": "$r2" }],
               "\n",
               { "->": "prevent" },
-              { "#f": 5 },
-            ],
-          },
+              { "#f": 5 }
+            ]
+          }
         ],
-        { "#f": 1 },
+        { "#f": 1 }
       ],
-      prevent: [
+      "prevent": [
         [
           [
             "ev",
@@ -559,14 +571,14 @@ export var storyContent = {
             [{ "#n": "$r1" }],
             "/str",
             "/ev",
-            { "*": ".^.^.c-0", flg: 18 },
+            { "*": ".^.^.c-0", "flg": 18 },
             {
-              s: [
+              "s": [
                 "^Reach out to Prevent (part of the antional counter-radicalisaition strategy) for advice or a safe confidential discussion. ",
-                { "->": "$r", var: true },
-                null,
-              ],
-            },
+                { "->": "$r", "var": true },
+                null
+              ]
+            }
           ],
           {
             "c-0": [
@@ -582,14 +594,14 @@ export var storyContent = {
               "^The End.",
               "\n",
               "end",
-              { "#f": 5 },
-            ],
-          },
+              { "#f": 5 }
+            ]
+          }
         ],
-        { "#f": 1 },
+        { "#f": 1 }
       ],
-      "#f": 1,
-    },
+      "#f": 1
+    }
   ],
-  listDefs: {},
-};
+  "listDefs": {}
+}
