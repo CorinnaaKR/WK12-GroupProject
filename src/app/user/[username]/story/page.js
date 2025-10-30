@@ -2,8 +2,8 @@
 import Script from "next/script";
 import InkButtons from "@/components/InkButtons";
 import "./story.css";
-import { useState } from "react";
-// import { Story } from "inkjs";
+
+
 export default function StoryPage() {
   return (
     <main className="pageContainer">
@@ -20,7 +20,6 @@ export default function StoryPage() {
           console.log("ink.js loaded");
         }}
       />
-
       <Script
         type="module"
         src="/ink-files/main.js"
