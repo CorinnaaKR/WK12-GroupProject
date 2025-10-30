@@ -44,7 +44,7 @@ export default function handleFeedbackSave() {
         maxWidth: "800px",
         margin: "0 auto",
         padding: "20px",
-        border: "2px solid #2BD872",
+        border: "6px solid #2BD872",
         borderRadius: "10px",
       }}
     >
