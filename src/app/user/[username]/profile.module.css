@@ -5,12 +5,15 @@
 }
 .buttonTitle {
   font-size: 1.5rem;
-  color: #34bdff;
+  color: #2bd872;
 }
 .howToUse {
   font-size: 1.5rem;
   font-style: italic;
+  color: #2bd872;
+  font-weight: bold;
 }
+
 .userWelcome {
   font-size: 2.5rem;
 }

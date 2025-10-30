@@ -38,7 +38,9 @@ export default function CommentsPage() {
         <h2>Leave a comment</h2>
         <form action={handleCommentSave}>
           <div>
-            <label htmlFor="nameBox">Name:</label>
+            <label htmlFor="nameBox" aria-label="Name">
+              Name:
+            </label>
             <input
               required
               type="text"
@@ -49,7 +51,9 @@ export default function CommentsPage() {
           </div>
 
           <div>
-            <label htmlFor="emailBox">Email:</label>
+            <label htmlFor="emailBox" aria-label="email">
+              Email:
+            </label>
             <input
               required
               type="email"
@@ -60,7 +64,9 @@ export default function CommentsPage() {
           </div>
 
           <div>
-            <label htmlFor="commentBox">Comment:</label>
+            <label htmlFor="commentBox" aria-label="comment">
+              Comment:
+            </label>
             <textarea
               required
               id="commentBox"
@@ -69,7 +75,9 @@ export default function CommentsPage() {
             />
           </div>
 
-          <button type="submit">Submit Comment</button>
+          <button type="submit" aria-label="submit">
+            Submit Comment
+          </button>
         </form>
       </div>
     </div>
