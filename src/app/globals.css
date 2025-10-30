@@ -54,3 +54,10 @@ body {
 .navLinks:hover {
   color: greenyellow;
 }
+
+@media (min-width: 600px) {
+  body {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
