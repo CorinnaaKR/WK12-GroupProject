@@ -60,7 +60,7 @@ export default function RootLayout({ children }) {
           <div className="footerPlacement">
             <div
               style={{
-                border: "2px solid #2BD872",
+                border: "6px solid #2BD872",
                 borderRadius: "10px",
                 textAlign: "center",
                 maxWidth: "800px",
