@@ -17,7 +17,6 @@ export default function handleFeedbackSave() {
     const do_better = formData.get("betterBox");
     const other = formData.get("otherBox");
     const usefulString = formData.get("foundUseful");
-
     const useful = usefulString === "true";
 
     console.log(name);
@@ -53,9 +52,11 @@ export default function handleFeedbackSave() {
         <i>Feedback</i>
       </h1>
       <div>
-        <h2>Share your thoughts on Heli</h2>
-        <p>
-          We would love to hear your feedback on Heli&apos; debut web app and
+        <h2 style={{ margin: "10px", fontSize: "1.2rem" }}>
+          <i>Share your thoughts on Heli</i>
+        </h2>
+        <p style={{ marginBottom: "10px" }}>
+          We would love to hear your feedback on Heli&apos;s debut web app and
           story so that we can offer the best experience going forward with our
           future endeavours. We aim to provide the highest quality educational
           interactive fiction for Prevent training as we grow.
@@ -180,7 +181,9 @@ export default function handleFeedbackSave() {
               value="true"
               required
             />
-            <label htmlFor="useful_yes">Yes </label>
+            <label htmlFor="useful_yes" style={{ padding: "7px" }}>
+              Yes{" "}
+            </label>
 
             <input
               type="radio"
@@ -189,7 +192,9 @@ export default function handleFeedbackSave() {
               value="false"
               required
             />
-            <label htmlFor="useful_no">No</label>
+            <label htmlFor="useful_no" style={{ padding: "7px" }}>
+              No
+            </label>
           </div>
 
           <button type="submit" class="confirm-button">
