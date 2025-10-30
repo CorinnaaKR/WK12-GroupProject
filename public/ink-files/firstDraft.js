@@ -1,4 +1,3 @@
-console.log("draft");
 export var storyContent = {
   inkVersion: 21,
   root: [

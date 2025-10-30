@@ -438,5 +438,4 @@ import { storyContent } from "./firstDraft.js";
     //     document.body.classList.toggle("dark");
     //   });
   }
-  console.log(storyContainer.lastChild.innerHTML.includes("The End."));
 })(storyContent);
