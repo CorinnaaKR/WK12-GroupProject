@@ -50,14 +50,17 @@ export default async function Home() {
     >
       {" "}
       <Header />
-      <h2 style={{ margin: "10px", fontSize: "1.2rem" }}>
+      <h2
+        style={{ margin: "10px", fontSize: "1.2rem" }}
+        aria-label="Heli Title - Helping Everyone Learn Interactively"
+      >
         <i>Helping Everyone Learn Interactively</i>
       </h2>
-      <p style={{ marginBottom: "10px" }}>
+      <p style={{ marginBottom: "10px" }} aria-label="Heli purpose statement">
         Heli aids the UK Government’s Prevent strategy by offering an
         interactive platform to identify and assess at-risk individuals.
       </p>
-      <p>
+      <p aria-label="Heli purpose statement">
         Through immersive fiction, it fosters active learning that improves
         recall and response. Future developments will introduce varied
         scenarios, branching narratives, and deeper insights to boost
@@ -65,7 +68,7 @@ export default async function Home() {
       </p>
       <Image
         src={DoSomethingGreatImage}
-        alt="Do Something Great Neon Sign"
+        alt="Image of a neon sign that says 'Do Something Great'"
         width={800}
         height={300}
         style={{
@@ -74,6 +77,7 @@ export default async function Home() {
           marginTop: "20px",
           borderRadius: "30px",
         }}
+        aria-label="Image of a neon sign that says 'Do Something Great'"
       />
       {/* 
    
