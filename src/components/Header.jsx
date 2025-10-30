@@ -1,7 +1,9 @@
 export default function Header() {
   return (
     <>
-      <h1><b>Welcome to Heli</b></h1>
+      <h1 style={{ fontSize: "3rem" }}>
+        <i>Welcome to Heli</i>
+      </h1>
       {/* about us */}
       {/* resources */}
       {/* story */}
