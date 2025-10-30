@@ -61,3 +61,6 @@ Callum - Styling the story page and adding instructions for the snippets and how
 Corinna ran npm run dev and was greeted with an error saying the page couldnt connect due to clerk being keyless and Econnrefused. When the error showed on the page is came down to there being an issue with the naming of the middleware file being called proxy (part of an update in vs code). Corinna changed the file name back to middleware and the page ran without issues. However Callum and Steph found they could both run the page with the file named proxy without issues.
 
 Callum discovered an issue with the story page in that once the sotry was loaded, if the user leaves the story page then tries to go back into it the story doesnt load again. As a group we tried to troubleshoot, then ended up asking Bertie. Callum and Bertie tried troubleshooting, while Corinna worked on the resources page and Steph worked on the Home & About pages.
+
+Thursday
+We started the day byt agreeing tasks: Callum wanted to continue orking on the erro0r from yesterday, steph is going to start of the styling for the home home and the abou page. Corinna is going to finish the resources page and then begin styling it.
