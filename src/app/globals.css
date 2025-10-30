@@ -28,6 +28,7 @@ body {
 
 .confirm-button {
   padding: 12px 24px;
+  margin-top: 10px;
   border: none;
   border-radius: 8px;
   cursor: pointer;

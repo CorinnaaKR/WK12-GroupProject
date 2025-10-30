@@ -16,7 +16,6 @@ export default function CommentsPage() {
     const email = formData.get("commenter_email");
     const comment = formData.get("comment_content");
 
-    // Revised Form Validation
     if (!name || !email || !comment) {
       console.error("Missing input(s)");
       return;

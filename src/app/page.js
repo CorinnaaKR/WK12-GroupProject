@@ -50,15 +50,13 @@ export default async function Home() {
     >
       {" "}
       <Header />
-      <h2>
+      <h2 style={{ margin: "10px", fontSize: "1.2rem" }}>
         <i>Helping Everyone Learn Interactively</i>
       </h2>
-      <br />
-      <p>
+      <p style={{ marginBottom: "10px" }}>
         Heli aids the UK Government’s Prevent strategy by offering an
         interactive platform to identify and assess at-risk individuals.
       </p>
-      <br />
       <p>
         Through immersive fiction, it fosters active learning that improves
         recall and response. Future developments will introduce varied
