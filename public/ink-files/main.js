@@ -1,5 +1,4 @@
 import { storyContent } from "./firstDraft.js";
-console.log(storyContent);
 !(async function (storyContent) {
   // Create ink story from the content using inkjs
   var story = new inkjs.Story(storyContent);
