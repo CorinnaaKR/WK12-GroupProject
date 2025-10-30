@@ -228,7 +228,7 @@ export default function handleFeedbackSave() {
           <button
             type="submit"
             aria-label="submit button"
-            class="confirm-button"
+            className="confirm-button"
           >
             Submit Feedback
           </button>
