@@ -48,3 +48,9 @@ body {
 .confirm-button:active {
   background-color: #8a6a85;
 }
+.navLinks:visited {
+  color: blueviolet;
+}
+.navLinks:hover {
+  color: greenyellow;
+}

@@ -9,19 +9,41 @@ export default async function Navbar() {
   return (
     <>
       <SignedIn>
-        <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
-        <Link href={`/user/${username}`}>Profile</Link>
-        <Link href={`/user/${username}/story`}>Story</Link>
-        <Link href="/resources">Resources</Link>
-        <Link href="/feedback">Feedback</Link>
+        <Link className="navLinks" href="/">
+          Home
+        </Link>
+        <Link className="navLinks" href="/about">
+          About
+        </Link>
+        <Link className="navLinks" href={`/user/${username}`}>
+          Profile
+        </Link>
+        <Link className="navLinks" href={`/user/${username}/story`}>
+          Story
+        </Link>
+        <Link className="navLinks" href="/resources">
+          Resources
+        </Link>
+        <Link className="navLinks" href="/feedback">
+          Feedback
+        </Link>
       </SignedIn>
       <SignedOut>
-        <Link href="/">Home</Link>
-        <Link href="/">About</Link>
-        <Link href={`/user/${username}/story`}>Story</Link>
-        <Link href="/resources">Resources</Link>
-        <Link href="/feedback">Feedback</Link>
+        <Link className="navLinks" href="/">
+          Home
+        </Link>
+        <Link className="navLinks" href="/">
+          About
+        </Link>
+        <Link className="navLinks" href={`/user/${username}/story`}>
+          Story
+        </Link>
+        <Link className="navLinks" href="/resources">
+          Resources
+        </Link>
+        <Link className="navLinks" href="/feedback">
+          Feedback
+        </Link>
       </SignedOut>
     </>
   );
