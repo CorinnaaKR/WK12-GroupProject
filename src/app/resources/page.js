@@ -2,8 +2,9 @@ import "./resources.css";
 
 export default function ResourcePage() {
   return (
-    <>
+    <div className="resourceMain">
       <h1 className="resources">Resources</h1>
+      <p className="context">Need advice or have concerns?</p>
       <div className="all">
         <h2>National</h2>
         <p className="national">National Police Prevent</p>
@@ -59,21 +60,23 @@ export default function ResourcePage() {
         </ul>
 
         <p className="cambridge">Cambridgeshire & Peterborough Prevent Team</p>
-        <li>01480 422596</li>
-        <li>
-          <a className="links" href="mailto: prevent@cambs.pnn.police.uk">
-            Send email
-          </a>
-        </li>
-        <li>
-          Make a referral online at{" "}
-          <a
-            className="links"
-            href="https://www.cambs.police.uk/advice/advice-and-information/t/prevent/prevent/beta/prevent-team-referral/"
-          >
-            https://www.cambs.police.uk/advice/advice-and-information/t/prevent/prevent/beta/prevent-team-referral/
-          </a>
-        </li>
+        <ul>
+          <li>01480 422596</li>
+          <li>
+            <a className="links" href="mailto: prevent@cambs.pnn.police.uk">
+              Send email
+            </a>
+          </li>
+          <li>
+            Make a referral online at{" "}
+            <a
+              className="links"
+              href="https://www.cambs.police.uk/advice/advice-and-information/t/prevent/prevent/beta/prevent-team-referral/"
+            >
+              https://www.cambs.police.uk/advice/advice-and-information/t/prevent/prevent/beta/prevent-team-referral/
+            </a>
+          </li>
+        </ul>
       </div>
 
       <div className="midlands">
@@ -163,6 +166,6 @@ export default function ResourcePage() {
           </li>
         </ul>
       </div>
-    </>
+    </div>
   );
 }

@@ -64,3 +64,7 @@ Callum discovered an issue with the story page in that once the sotry was loaded
 
 Thursday
 We started the day byt agreeing tasks: Callum wanted to continue orking on the erro0r from yesterday, steph is going to start of the styling for the home home and the abou page. Corinna is going to finish the resources page and then begin styling it.
+
+We asked for help from Manny for the refresh issue and he had a couple of suggestions, Bertie also joined, but after experimenting with useEffect and useState for a while, Manny said a better solution given the time constraits would be to hide the header while the user is in story mode and then redisplay it when the user is finished with the story. Callum set about trying to do that, with Corinna and Steph pitching in solutions. Steph finished styling the about and home page, then moved on to styling the user page. Corinnas finished the resources page and then set about styling the resources page.
+
+Before lunch, Callum is still trying to make it so that the user can't navigate off the story page while in the story. Steph finished styling the story , home and about pages. Corinna finished styling the resources but found that some of styling elements were affecting other pages so the team collaborated to solve those issues. Steph and Corinna are also pitching in to help Callum.
