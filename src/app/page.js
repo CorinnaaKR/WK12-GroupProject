@@ -2,9 +2,12 @@
 // import CommentsPage from "@/app/comments/page.js";
 // import FeedbackPage from "@/app/feedback/page.js";
 import Header from "@/components/Header.jsx";
-import Footer from "@/components/Footer.jsx";
+// import Footer from "@/components/Footer.jsx";
 import { currentUser } from "@clerk/nextjs/server";
 import { db } from "@/utils/dbConnection";
+import Image from "next/image";
+import DoSomethingGreatImage from "@/assets/DoSomethingGreat2.jpg";
+
 
 export default async function Home() {
   let currUser;
@@ -38,17 +41,17 @@ export default async function Home() {
   return (
     <div
       style={{
-        textAlign: "center",
+  textAlign: "center",
         maxWidth: "800px",
         margin: "0 auto",
         padding: "20px",
-        border: "1px solid #ccc",
+        border: "2px solid #2BD872",
+        borderRadius: "10px"
       }}
     >
       {" "}
       <Header />
-      <h1>Welcome to Heli</h1>
-      <h2>Helping Everyone Learn Interactively</h2>
+      <h2><i>Helping Everyone Learn Interactively</i></h2>
       <br />
       <p>
         Heli aids the UK Government’s Prevent strategy by offering an interactive platform to identify and assess at-risk individuals.
@@ -57,37 +60,25 @@ export default async function Home() {
       <p>
         Through immersive fiction, it fosters active learning that improves recall and response. Future developments will introduce varied scenarios, branching narratives, and deeper insights to boost engagement, understanding, and decision-making.
       </p>
+
+      <Image
+        src={DoSomethingGreatImage}
+        alt="Do Something Great Neon Sign"
+        width={800} 
+        height={300} 
+        style={{
+            maxWidth: "100%", 
+            height: "auto", 
+            marginTop: "20px", 
+            borderRadius: "30px",
+            // boxShadow: "0 8px 16px rgba(0, 0, 0, 0.4)",
+        }}
+      />
 {/* 
-      <p>
-        Our Interactive learning portal focuses on the UK Government&apos;s
-        counter-terrorism strategy known as Prevent. Through this, we aim to
-        provide an engaging means to help identify or assess vulnerable
-        individuals who may be at risk of radicalisation.
-      </p>
-      <br />
-      <p>
-        Through the use of interactive fiction, we aim to bring a conscientious
-        and active approach to this training to further cement the importance of
-        this training in the user&apos;s mind by immersing them in the situation
-        and how they might handle this interaction as opposed to static learning
-        such as leaflets, documentation or slides.
-      </p>
-      <br />
-      <p>
-        Through this increased engagement, we hope to see users take this
-        information onboard to a greater degree, allowing them to recall the
-        information and act appropriately in the moment.
-      </p>
-      <br />
-      <p>
-        As the programme expands, we aim to include a greater variety of
-        situations, branching narratives, and greater depth of thinking to fully
-        explore the scenarios presented, driving safety through learning,
-        engagement and conscious decision making.{" "}
-      </p> */}
+   
       {/* <CommentsPage /> */}
       {/* <FeedbackPage /> */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

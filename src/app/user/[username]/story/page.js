@@ -2,7 +2,7 @@
 import Script from "next/script";
 import InkButtons from "@/components/InkButtons";
 import "./story.css";
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 // import { Story } from "inkjs";
 const useScript = (url) => {
   useEffect(() => {
@@ -18,6 +18,7 @@ const useScript = (url) => {
     };
   }, [url]);
 };
+
 export default function StoryPage() {
   useScript("/ink-files/main.js");
   return (
@@ -33,8 +34,12 @@ export default function StoryPage() {
         strategy="beforeInteractive"
         onReady={() => {}}
       />
+
       {/* <Script
         async
+
+      <Script
+
         type="module"
         src="/ink-files/main.js"
         strategy="afterInteractive"

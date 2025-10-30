@@ -39,10 +39,19 @@ export default function handleFeedbackSave() {
   }
 
   return (
-    <div>
-      <h1>Feedback</h1>
+    <div
+    style={{
+  textAlign: "center",
+        maxWidth: "800px",
+        margin: "0 auto",
+        padding: "20px",
+        border: "2px solid #2BD872",
+        borderRadius: "10px"
+      }}>
+      <h1><b>Feedback</b></h1>
       <div>
-        <h2>Leave a comment</h2>
+        <h2>Share your thoughts on Heli</h2>
+        <p>We would love to hear your feedback on Heli&apos; debut web app and story so that we can offer the best experience going forward with our future endeavours. We aim to provide the highest quality educational interactive fiction for Prevent training as we grow.</p>
         <form action={handleFeedbackSubmission}>
           <div>
             <label htmlFor="nameBox">Name: </label>
@@ -52,6 +61,8 @@ export default function handleFeedbackSave() {
               type="text"
               id="nameBox"
               placeholder="Your Name"
+              style={{ width: "100%", boxSizing: "border-box" }}
+
             />
           </div>
 
@@ -63,6 +74,8 @@ export default function handleFeedbackSave() {
               type="email"
               id="emailBox"
               placeholder="name@yourEmail.com"
+              style={{ width: "100%", boxSizing: "border-box" }}
+
             />
           </div>
 
@@ -74,6 +87,7 @@ export default function handleFeedbackSave() {
               type="text"
               id="wellBox"
               placeholder="What were we great at?"
+              style={{ width: "100%", boxSizing: "border-box" }}
             />
           </div>
 
@@ -85,6 +99,8 @@ export default function handleFeedbackSave() {
               type="text"
               id="betterBox"
               placeholder="How could we improve?"
+              style={{ width: "100%", boxSizing: "border-box" }}
+
             />
           </div>
 
@@ -99,7 +115,7 @@ export default function handleFeedbackSave() {
               value="true"
               required
             />
-            <label htmlFor="useful_yes">Yes</label>
+            <label htmlFor="useful_yes">Yes </label>
 
             <input
               type="radio"
@@ -119,10 +135,12 @@ export default function handleFeedbackSave() {
               type="text"
               id="otherBox"
               placeholder="We welcome all feedback!"
+              style={{ width: "100%", boxSizing: "border-box" }}
+
             />
           </div>
 
-          <button type="submit">Submit Feedback</button>
+          <button type="submit" class="confirm-button">Submit Feedback</button>
         </form>
       </div>
     </div>
