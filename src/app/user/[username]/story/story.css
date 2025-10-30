@@ -312,6 +312,9 @@ img {
     width: 100%;
   }
 }
+header {
+  display: none;
+}
 @media screen and (max-width: 600px) {
   #word-storage {
     font-size: 0.7rem;

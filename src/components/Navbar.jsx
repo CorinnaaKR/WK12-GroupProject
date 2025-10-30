@@ -1,14 +1,26 @@
 import { SignedIn, SignedOut } from "@clerk/nextjs";
 import { currentUser } from "@clerk/nextjs/server";
-import { revalidatePath } from "next/cache";
+// import { revalidatePath } from "next/cache";
 import Link from "next/link";
+// import { redirect } from "next/navigation";
 
 export default async function Navbar() {
   let currUser = await currentUser();
   let username = currUser.username;
+
+  // async function redirectToStory() {
+  //   "use server";
+  //   revalidatePath(`/user/${username}/story`);
+  //   redirect(`/user/${username}/story`);
+  // }
+
   return (
     <>
       <SignedIn>
+        {/* <form action={redirectToStory}>
+          <button type="submit">Story</button>
+        </form> */}
+
         <Link className="navLinks" href="/">
           Home
         </Link>
