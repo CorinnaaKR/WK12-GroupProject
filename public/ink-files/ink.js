@@ -1,4 +1,4 @@
-console.log("ink");
+
 !(function (t, e) {
   "object" == typeof exports && "undefined" != typeof module
     ? e(exports)

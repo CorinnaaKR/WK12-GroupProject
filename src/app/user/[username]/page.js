@@ -10,7 +10,7 @@ export default async function ProfilePage({ params }) {
   return (
     <div
       style={{
-        border: "2px solid #2BD872",
+        border: "6px solid #2BD872",
         borderRadius: "10px",
         textAlign: "center",
         maxWidth: "800px",

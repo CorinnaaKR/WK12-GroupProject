@@ -6,9 +6,11 @@ export default function ResourcePage() {
       <h1 className="resources">Resources</h1>
       <p className="context">Need advice or have concerns?</p>
       <div className="all">
-        <h2>National</h2>
-        <p className="national">National Police Prevent</p>
-        <ul>
+        
+        <p className="national">
+          <h2>National</h2>
+        <p className="national"><b>National Police Prevent</b>
+           <ul>
           <li>
             ACT Early:
             <a
@@ -22,12 +24,14 @@ export default function ResourcePage() {
           </li>
           <li>Prevent advice line: 0800 011 3764, or in an emergency 999</li>
         </ul>
+        </p></p>
+       
       </div>
 
       <div className="east">
         <h3>East of England</h3>
         <ul>
-          <p className="norfolk">Norfolk Police Prevent team</p>
+          <p className="norfolk"><b>Norfolk Police Prevent team</b>
           <li>01953 423905 or 01953 423896</li>
           <li>
             <a
@@ -47,9 +51,10 @@ export default function ResourcePage() {
               aria-label="norfolk police prevent advice website"
             />
           </li>
+          </p>
         </ul>
 
-        <p className="suffolk">Suffolk Police Prevent team</p>
+        <p className="suffolk"><b>Suffolk Police Prevent team</b>
         <ul>
           <li>01473 613500</li>
           <li>
@@ -72,8 +77,9 @@ export default function ResourcePage() {
             </a>
           </li>
         </ul>
+        </p>
 
-        <p className="cambridge">Cambridgeshire & Peterborough Prevent Team</p>
+        <p className="cambridge"><b>Cambridgeshire & Peterborough Prevent Team</b>
         <ul>
           <li>01480 422596</li>
           <li>
@@ -96,11 +102,12 @@ export default function ResourcePage() {
             </a>
           </li>
         </ul>
+        </p>
       </div>
 
       <div className="midlands">
         <h4>East Midlands</h4>
-        <p className="derby">Derbyshire Prevent Team</p>
+        <p className="derby"><b>Derbyshire Prevent Team</b>
         <ul>
           <li>0300 122 8694</li>
           <li>
@@ -114,8 +121,9 @@ export default function ResourcePage() {
             </a>
           </li>
         </ul>
+        </p>
 
-        <p className="notts">Nottinghamshire Prevent Team</p>
+        <p className="notts"><b>Nottinghamshire Prevent Team</b>
         <ul>
           <li>0800 011 3764</li>
           <li>
@@ -128,21 +136,24 @@ export default function ResourcePage() {
             </a>
           </li>
           <li>
+            Make a referral online at{" "}
+
             <a
               className="links"
               href="Make a referral online at https://www.nottinghamshire.police.uk/advice/advice-and-information/t/prevent/prevent/beta/prevent-team-referral/"
               aria-label="nottingham police prevent advice website"
             >
-              Make a referral online at
-              https://www.nottinghamshire.police.uk/advice/advice-and-information/t/prevent/prevent/beta/prevent-team-referral/
+               https://www.nottinghamshire.police.uk/advice/advice-and-information/t/prevent/prevent/beta/prevent-team-referral/
             </a>
           </li>
         </ul>
+        </p>
 
-        <p className="leicester">Leicester Prevent Team</p>
+        <p className="leicester"><b>Leicester Prevent Team</b>
         <ul>
           <li>
-            Call 101 & enter extension 6770 Make a referral online at{" "}
+            Call 101 & enter extension 677
+            <li>Make a referral online at{" "}
             <a
               className="links"
               href="https://www.leics.police.uk/advice/advice-and-information/t/prevent/prevent/beta/prevent-team-referral/"
@@ -151,17 +162,18 @@ export default function ResourcePage() {
               https://www.leics.police.uk/advice/advice-and-information/t/prevent/prevent/beta/prevent-team-referral/
             </a>
           </li>
+          </li>
         </ul>
+        </p>
       </div>
 
       <div className="yorkshire">
         <h5>Yorkshire & the Humber</h5>
-        <p className="humber">Humberside Prevent Team</p>
+        <p className="humber"><b>Humberside Prevent Team</b>
         <ul>
           <li>01482 356413</li>
           <li>
-            Make a referral online at
-            <a
+Make a referral online at{" "}            <a
               className="links"
               href="https://www.humberside.police.uk/advice/advice-and-information/t/prevent/prevent/beta/prevent-team-referral"
               aria-label="humberside police prevent advice website"
@@ -170,11 +182,12 @@ export default function ResourcePage() {
             </a>
           </li>
         </ul>
+        </p>
       </div>
 
       <div className="nw">
         <h6>North West</h6>
-        <p className="liverpool">Liverpool Police Prevent Team</p>
+        <p className="liverpool">Liverpool Police Prevent Team
         <ul>
           <li>0151 777 8506</li>
           <li>
@@ -197,6 +210,7 @@ export default function ResourcePage() {
             </a>
           </li>
         </ul>
+        </p>
       </div>
     </div>
   );

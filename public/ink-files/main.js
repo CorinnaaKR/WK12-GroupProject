@@ -60,7 +60,6 @@ import { storyContent } from "./firstDraft.js";
       // Get ink to generate the next paragraph
       var paragraphText = story.Continue();
       var tags = story.currentTags;
-
       // Any special tags included with this line
       var customClasses = [];
       for (var i = 0; i < tags.length; i++) {
@@ -163,6 +162,12 @@ import { storyContent } from "./firstDraft.js";
       // Fade in paragraph after a short delay
       showAfter(delay, paragraphElement);
       delay += 200.0;
+      if (storyContainer.lastChild.innerHTML.includes("The End.")) {
+        let escapeLink = document.createElement("a");
+        escapeLink.innerHTML = "Navigate to resources";
+        escapeLink.href = "/resources";
+        storyContainer.appendChild(escapeLink);
+      }
     }
 
     // Create HTML choices from ink choices
