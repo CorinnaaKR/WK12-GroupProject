@@ -1,15 +1,17 @@
 export default function ResourcePage() {
   return (
-    <div className="resources">
+    <>
       <h1>Resources</h1>
+      <div className="national">
+        <h2>National Police Prevent</h2>
+        <ul>
+          <li>
+            ACT Early <a href="https://actearly.uk/"></a>
+          </li>
+          <li>Prevent advice line: 0800 011 3764, or in an emergency 999</li>
+        </ul>
+      </div>
 
-      <h2>National Police Prevent</h2>
-      <ul>
-        <li>
-          ACT Early <a href="https://actearly.uk/"></a>
-        </li>
-        <li>Prevent advice line: 0800 011 3764, or in an emergency 999</li>
-      </ul>
       <div className="east">
         <h3>East of England</h3>
         <ul>
@@ -71,28 +73,30 @@ export default function ResourcePage() {
         </ul>
       </div>
 
-      <h5>Yorkshire & the Humber</h5>
-      <p className="humber">Humberside Prevent Team</p>
-      <ul>
-        <li>01482 356413</li>
-        <li>
-          Make a referral online at
-          <a href="https://www.humberside.police.uk/advice/advice-and-information/t/prevent/prevent/beta/prevent-team-referral"></a>
-        </li>
-      </ul>
-    </div>
+      <div className="humber">
+        <h5>Yorkshire & the Humber</h5>
+        <p className="humber">Humberside Prevent Team</p>
+        <ul>
+          <li>01482 356413</li>
+          <li>
+            Make a referral online at
+            <a href="https://www.humberside.police.uk/advice/advice-and-information/t/prevent/prevent/beta/prevent-team-referral"></a>
+          </li>
+        </ul>
+      </div>
+
+      <div className="nw">
+        <h6>North West</h6>
+        <p className="liverpool">Liverpool Police Prevent Team</p>
+        <ul>
+          <li>0151 777 8506</li>
+          <li>prevent@merseyside.police.uk</li>
+          <li>
+            Make a referral online at{" "}
+            <a href="https://www.merseyside.police.uk/advice/advice-and-information/t/prevent/prevent/alpha/prevent-referral/"></a>
+          </li>
+        </ul>
+      </div>
+    </>
   );
-}
-
-{
-  /* <div className="Liv"
-
- <p className="liverpool">Liverpool Police Prevent Team</p>
- <ul>
-      <li>0151 777 8506</li>
-      <li>prevent@merseyside.police.uk</li>
-      <li>
-        Make a referral online at{" "}
-        <a href="https://www.merseyside.police.uk/advice/advice-and-information/t/prevent/prevent/alpha/prevent-referral/"></a>
-      </li>  */
 }
