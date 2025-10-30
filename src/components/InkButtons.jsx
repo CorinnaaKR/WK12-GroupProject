@@ -46,9 +46,9 @@ export default function InkButtons() {
         <button id="reload" title="Reload from save point">
           load
         </button>
-        <button id="theme-switch" title="Switch theme">
+        {/* <button id="theme-switch" title="Switch theme">
           theme
-        </button>
+        </button> */}
         <button
           id="snippet"
           title="Save selected text in notes"
