@@ -19,12 +19,13 @@ import { storyContent } from "./firstDraft.js";
       var splitTag = splitPropertyTag(globalTag);
 
       // THEME: dark
-      if (splitTag && splitTag.property == "theme") {
-        globalTagTheme = splitTag.val;
-      }
+      // if (splitTag && splitTag.property == "theme") {
+      //   globalTagTheme = splitTag.val;
+      // }
 
       // author: Your Name
-      else if (splitTag && splitTag.property == "author") {
+      // else
+      if (splitTag && splitTag.property == "author") {
         var byline = document.querySelector(".byline");
         byline.innerHTML = "by " + splitTag.val;
       }
@@ -35,7 +36,7 @@ import { storyContent } from "./firstDraft.js";
   var outerScrollContainer = document.querySelector(".outerContainer");
 
   // page features setup
-  setupTheme(globalTagTheme);
+  // setupTheme(globalTagTheme);
   var hasSave = loadSavePoint();
   setupButtons(hasSave);
 
@@ -361,25 +362,25 @@ import { storyContent } from "./firstDraft.js";
   }
 
   // Detects which theme (light or dark) to use
-  function setupTheme(globalTagTheme) {
-    // load theme from browser memory
-    var savedTheme;
-    try {
-      savedTheme = window.localStorage.getItem("theme");
-    } catch (e) {
-      console.debug("Couldn't load saved theme");
-    }
+  // function setupTheme(globalTagTheme) {
+  // load theme from browser memory
+  //   var savedTheme;
+  //   try {
+  //     savedTheme = window.localStorage.getItem("theme");
+  //   } catch (e) {
+  //     console.debug("Couldn't load saved theme");
+  //   }
 
-    // Check whether the OS/browser is configured for dark mode
-    var browserDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  // Check whether the OS/browser is configured for dark mode
+  //   var browserDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-    if (
-      savedTheme === "dark" ||
-      (savedTheme == undefined && globalTagTheme === "dark") ||
-      (savedTheme == undefined && globalTagTheme == undefined && browserDark)
-    )
-      document.body.classList.add("dark");
-  }
+  //   if (
+  //     savedTheme === "dark" ||
+  //     (savedTheme == undefined && globalTagTheme === "dark") ||
+  //     (savedTheme == undefined && globalTagTheme == undefined && browserDark)
+  //   )
+  //     document.body.classList.add("dark");
+  // }
 
   // Used to hook up the functionality for global functionality buttons
   function setupButtons(hasSave) {
@@ -398,10 +399,10 @@ import { storyContent } from "./firstDraft.js";
         try {
           window.localStorage.setItem("save-state", savePoint);
           document.getElementById("reload").removeAttribute("disabled");
-          window.localStorage.setItem(
-            "theme",
-            document.body.classList.contains("dark") ? "dark" : ""
-          );
+          // window.localStorage.setItem(
+          //   "theme",
+          //   document.body.classList.contains("dark") ? "dark" : ""
+          // );
         } catch (e) {
           console.warn("Couldn't save state");
         }
@@ -425,11 +426,11 @@ import { storyContent } from "./firstDraft.js";
       continueStory(true);
     });
 
-    let themeSwitchEl = document.getElementById("theme-switch");
-    if (themeSwitchEl)
-      themeSwitchEl.addEventListener("click", function (event) {
-        document.body.classList.add("switched");
-        document.body.classList.toggle("dark");
-      });
+    // let themeSwitchEl = document.getElementById("theme-switch");
+    // if (themeSwitchEl)
+    //   themeSwitchEl.addEventListener("click", function (event) {
+    //     document.body.classList.add("switched");
+    //     document.body.classList.toggle("dark");
+    //   });
   }
 })(storyContent);

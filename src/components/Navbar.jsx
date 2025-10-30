@@ -1,5 +1,6 @@
 import { SignedIn, SignedOut } from "@clerk/nextjs";
 import { currentUser } from "@clerk/nextjs/server";
+import { revalidatePath } from "next/cache";
 import Link from "next/link";
 
 export default async function Navbar() {
@@ -14,9 +15,6 @@ export default async function Navbar() {
         <Link href={`/user/${username}/story`}>Story</Link>
         <Link href="/resources">Resources</Link>
         <Link href="/feedback">Feedback</Link>
-
-
-        
       </SignedIn>
       <SignedOut>
         <Link href="/">Home</Link>
@@ -24,7 +22,6 @@ export default async function Navbar() {
         <Link href={`/user/${username}/story`}>Story</Link>
         <Link href="/resources">Resources</Link>
         <Link href="/feedback">Feedback</Link>
-
       </SignedOut>
     </>
   );

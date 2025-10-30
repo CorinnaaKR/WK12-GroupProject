@@ -53,23 +53,21 @@ export default function RootLayout({ children }) {
               <Navbar />
             </SignedIn>
           </header>
-          <main className="grow">
-             {children}
-          </main>
-        
+          <main className="grow">{children}</main>
+
           <div className="footerPlacement">
-             <div
-      style={{
-  textAlign: "center",
-        maxWidth: "800px",
-        margin: "0 auto",
-        padding: "20px",
-        border: "2px solid #2BD872",
-        borderRadius: "10px"
-      }}
-    >
-             <Footer />
-          </div>
+            <div
+              style={{
+                textAlign: "center",
+                maxWidth: "800px",
+                margin: "0 auto",
+                padding: "20px",
+                border: "2px solid #2BD872",
+                borderRadius: "10px",
+              }}
+            >
+              <Footer />
+            </div>
           </div>
         </body>
       </html>

@@ -23,8 +23,6 @@ export default async function ProfilePage({ params }) {
       <p className={profileStyles.desc}>
         Loads from your saved point in the story
       </p>
-      <h3 className={profileStyles.buttonTitle}>Theme:</h3>
-      <p className={profileStyles.desc}>Swaps between light and dark theme</p>
       <h3 className={profileStyles.buttonTitle}>Snippet:</h3>
       <p className={profileStyles.desc}>
         Highlight/select text and click this to save the selected text as a

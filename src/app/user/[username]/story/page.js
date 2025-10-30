@@ -10,9 +10,8 @@ const useScript = (url) => {
     script.src = url;
     script.type = "module";
     script.crossOrigin = "use-credentials";
-    script.defer = true;
+    script.async = true;
     document.body.appendChild(script);
-    console.log("script run");
     return () => {
       document.body.removeChild(script);
     };
@@ -20,22 +19,24 @@ const useScript = (url) => {
 };
 
 export default function StoryPage() {
+  useScript("/ink-files/ink.js");
   useScript("/ink-files/main.js");
   return (
-    <main className="pageContainer">
-      <section className="storySection">
-        <div className="outerContainer">
-          <div id="story" className="container"></div>
-        </div>
-      </section>
-      <InkButtons />
-      <Script
-        src="/ink-files/ink.js"
-        strategy="beforeInteractive"
-        onReady={() => {}}
-      />
+    <>
+      <main className="pageContainer">
+        <section className="storySection">
+          <div className="outerContainer">
+            <div id="story" className="container"></div>
+          </div>
+        </section>
+        <InkButtons />
+        {/* <Script
+          src="/ink-files/ink.js"
+          strategy="beforeInteractive"
+          onReady={() => {}}
+        /> */}
 
-      {/* <Script
+        {/* <Script
         async
 
       <Script
@@ -48,6 +49,7 @@ export default function StoryPage() {
         }}
         crossOrigin="use-credentials"
       /> */}
-    </main>
+      </main>
+    </>
   );
 }

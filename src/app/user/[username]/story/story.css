@@ -3,7 +3,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: lighter;
-  background: white;
+  background: var(--background);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -32,7 +32,7 @@ h2 {
   font-style: italic;
   font-family: sans-serif;
   font-weight: lighter;
-  color: #bbb;
+  color: var(--foreground);
 }
 
 .header {
@@ -96,7 +96,7 @@ h2 {
   margin: 0 auto;
   padding: 20px;
   padding-top: 4em;
-  background: white;
+  background: var(--background);
 }
 
 .switched .container {
@@ -105,12 +105,12 @@ h2 {
 
 p {
   font-size: 13pt;
-  color: #888;
+  color: var(--foreground);
   line-height: 1.7em;
   font-weight: lighter;
 }
 
-a {
+.choice {
   font-weight: 700;
   color: #b97c2c;
   font-family: sans-serif;
@@ -118,13 +118,13 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: black;
+.choice:hover {
+  color: red;
   transition: color 0.1s;
 }
 
 strong {
-  color: black;
+  color: var(--foreground);
   font-weight: bold;
 }
 
@@ -177,7 +177,7 @@ img {
 .end {
   text-align: center;
   font-weight: bold;
-  color: black;
+  color: var(--foreground);
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -191,7 +191,7 @@ img {
   left: 14px;
   top: 4px;
   user-select: none;
-  background: white;
+  background: var(--background);
   transition: color 0.6s, background 0.6s;
 }
 
@@ -218,7 +218,7 @@ img {
     # theme: dark
 */
 
-body.dark {
+/* body.dark {
   background: black;
   color: white;
 }
@@ -235,7 +235,7 @@ body.dark {
   background: black;
 }
 
-.dark a {
+.dark .choice {
   color: #cc8f1a;
   transition: color 0.6s;
 }
@@ -258,7 +258,7 @@ body.dark {
 
 .dark #controls {
   background: black;
-}
+} */
 
 /*custom stuff*/
 
@@ -272,7 +272,8 @@ body.dark {
 .pageContainer {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  height: calc(100vh - 250px);
+  margin-bottom: 50px;
 }
 .storySection {
   width: 80%;
@@ -284,7 +285,6 @@ body.dark {
   .pageContainer {
     display: flex;
     flex-direction: column;
-    height: 100vh;
   }
   #word-storage {
     width: calc(100vw - 20px);
