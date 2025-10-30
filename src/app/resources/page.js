@@ -81,12 +81,9 @@ export default function ResourcePage() {
         </li>
       </ul>
     </div>
-  );
-}
-
-{
-  /* <div className="Liv"
-
+  
+<div className= "nw">
+<h6>North West</h6>
  <p className="liverpool">Liverpool Police Prevent Team</p>
  <ul>
       <li>0151 777 8506</li>
@@ -94,5 +91,9 @@ export default function ResourcePage() {
       <li>
         Make a referral online at{" "}
         <a href="https://www.merseyside.police.uk/advice/advice-and-information/t/prevent/prevent/alpha/prevent-referral/"></a>
-      </li>  */
+      </li>
+      </ul> 
+</div>
+);
 }
+
