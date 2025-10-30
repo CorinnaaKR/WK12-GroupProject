@@ -17,7 +17,6 @@ export default function handleFeedbackSave() {
     const do_better = formData.get("betterBox");
     const other = formData.get("otherBox");
     const usefulString = formData.get("foundUseful");
-
     const useful = usefulString === "true";
 
     console.log(name);
@@ -40,72 +39,139 @@ export default function handleFeedbackSave() {
 
   return (
     <div
-    style={{
-  textAlign: "center",
+      style={{
+        textAlign: "center",
         maxWidth: "800px",
         margin: "0 auto",
         padding: "20px",
         border: "2px solid #2BD872",
-        borderRadius: "10px"
-      }}>
-      <h1><b>Feedback</b></h1>
+        borderRadius: "10px",
+      }}
+    >
+      <h1 style={{ fontSize: "3rem" }}>
+        <i>Feedback</i>
+      </h1>
       <div>
-        <h2>Share your thoughts on Heli</h2>
-        <p>We would love to hear your feedback on Heli&apos; debut web app and story so that we can offer the best experience going forward with our future endeavours. We aim to provide the highest quality educational interactive fiction for Prevent training as we grow.</p>
+        <h2 style={{ margin: "10px", fontSize: "1.2rem" }}>
+          <i>Share your thoughts on Heli</i>
+        </h2>
+        <p style={{ marginBottom: "10px" }}>
+          We would love to hear your feedback on Heli&apos;s debut web app and
+          story so that we can offer the best experience going forward with our
+          future endeavours. We aim to provide the highest quality educational
+          interactive fiction for Prevent training as we grow.
+        </p>
         <form action={handleFeedbackSubmission}>
           <div>
-            <label htmlFor="nameBox">Name: </label>
+            <label htmlFor="nameBox" style={{ fontSize: "20px" }}>
+              Name:
+            </label>
             <input
               required
               name="nameBox"
               type="text"
               id="nameBox"
               placeholder="Your Name"
-              style={{ width: "100%", boxSizing: "border-box" }}
-
+              border="1px"
+              style={{
+                width: "100%",
+                boxSizing: "border-box",
+                border: "2px solid #c67afe",
+                padding: "10px",
+                borderRadius: "5px",
+                marginBottom: "10px",
+              }}
             />
           </div>
 
           <div>
-            <label htmlFor="emailBox">Email: </label>
+            <label htmlFor="emailBox" style={{ fontSize: "20px" }}>
+              Email:
+            </label>
             <input
               required
               name="emailBox"
               type="email"
               id="emailBox"
               placeholder="name@yourEmail.com"
-              style={{ width: "100%", boxSizing: "border-box" }}
-
+              style={{
+                width: "100%",
+                boxSizing: "border-box",
+                border: "2px solid #c67afe",
+                padding: "10px",
+                borderRadius: "5px",
+                marginBottom: "10px",
+              }}
             />
           </div>
 
           <div>
-            <label htmlFor="doneWell">What did we do well?: </label>
+            <label htmlFor="doneWell" style={{ fontSize: "20px" }}>
+              What did we do well?:
+            </label>
             <textarea
               required
               name="wellBox"
               type="text"
               id="wellBox"
               placeholder="What were we great at?"
-              style={{ width: "100%", boxSizing: "border-box" }}
+              style={{
+                width: "100%",
+                boxSizing: "border-box",
+                border: "2px solid #c67afe",
+                padding: "10px",
+                borderRadius: "5px",
+                marginBottom: "10px",
+              }}
             />
           </div>
 
           <div>
-            <label htmlFor="doBetter">What could we do better?: </label>
+            <label htmlFor="doBetter" style={{ fontSize: "20px" }}>
+              What could we do better?:{" "}
+            </label>
             <textarea
               required
               name="betterBox"
               type="text"
               id="betterBox"
               placeholder="How could we improve?"
-              style={{ width: "100%", boxSizing: "border-box" }}
-
+              style={{
+                width: "100%",
+                boxSizing: "border-box",
+                border: "2px solid #c67afe",
+                padding: "10px",
+                borderRadius: "5px",
+                marginBottom: "10px",
+              }}
             />
           </div>
 
           <div>
-            <label>Did you find this useful?:</label>
+            <label htmlFor="otherBox" style={{ fontSize: "20px" }}>
+              Any other feedback?:{" "}
+            </label>
+            <textarea
+              required
+              name="otherBox"
+              type="text"
+              id="otherBox"
+              placeholder="We welcome all feedback!"
+              style={{
+                width: "100%",
+                boxSizing: "border-box",
+                border: "2px solid #c67afe",
+                padding: "10px",
+                borderRadius: "5px",
+                marginBottom: "10px",
+              }}
+            />
+          </div>
+
+          <div>
+            <label style={{ fontSize: "20px" }}>
+              Did you find this useful?:
+            </label>
             <br />
 
             <input
@@ -115,7 +181,9 @@ export default function handleFeedbackSave() {
               value="true"
               required
             />
-            <label htmlFor="useful_yes">Yes </label>
+            <label htmlFor="useful_yes" style={{ padding: "7px" }}>
+              Yes{" "}
+            </label>
 
             <input
               type="radio"
@@ -124,23 +192,14 @@ export default function handleFeedbackSave() {
               value="false"
               required
             />
-            <label htmlFor="useful_no">No</label>
+            <label htmlFor="useful_no" style={{ padding: "7px" }}>
+              No
+            </label>
           </div>
 
-          <div>
-            <label htmlFor="otherBox">Any other feedback?: </label>
-            <textarea
-              required
-              name="otherBox"
-              type="text"
-              id="otherBox"
-              placeholder="We welcome all feedback!"
-              style={{ width: "100%", boxSizing: "border-box" }}
-
-            />
-          </div>
-
-          <button type="submit" class="confirm-button">Submit Feedback</button>
+          <button type="submit" class="confirm-button">
+            Submit Feedback
+          </button>
         </form>
       </div>
     </div>

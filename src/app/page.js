@@ -8,7 +8,6 @@ import { db } from "@/utils/dbConnection";
 import Image from "next/image";
 import DoSomethingGreatImage from "@/assets/DoSomethingGreat2.jpg";
 
-
 export default async function Home() {
   let currUser;
   currUser = await currentUser();
@@ -41,40 +40,42 @@ export default async function Home() {
   return (
     <div
       style={{
-  textAlign: "center",
+        textAlign: "center",
         maxWidth: "800px",
         margin: "0 auto",
         padding: "20px",
         border: "2px solid #2BD872",
-        borderRadius: "10px"
+        borderRadius: "10px",
       }}
     >
       {" "}
       <Header />
-      <h2><i>Helping Everyone Learn Interactively</i></h2>
-      <br />
-      <p>
-        Heli aids the UK Government’s Prevent strategy by offering an interactive platform to identify and assess at-risk individuals.
+      <h2 style={{ margin: "10px", fontSize: "1.2rem" }}>
+        <i>Helping Everyone Learn Interactively</i>
+      </h2>
+      <p style={{ marginBottom: "10px" }}>
+        Heli aids the UK Government’s Prevent strategy by offering an
+        interactive platform to identify and assess at-risk individuals.
       </p>
-      <br />
       <p>
-        Through immersive fiction, it fosters active learning that improves recall and response. Future developments will introduce varied scenarios, branching narratives, and deeper insights to boost engagement, understanding, and decision-making.
+        Through immersive fiction, it fosters active learning that improves
+        recall and response. Future developments will introduce varied
+        scenarios, branching narratives, and deeper insights to boost
+        engagement, understanding, and decision-making.
       </p>
-
       <Image
         src={DoSomethingGreatImage}
         alt="Do Something Great Neon Sign"
-        width={800} 
-        height={300} 
+        width={800}
+        height={300}
         style={{
-            maxWidth: "100%", 
-            height: "auto", 
-            marginTop: "20px", 
-            borderRadius: "30px",
-            // boxShadow: "0 8px 16px rgba(0, 0, 0, 0.4)",
+          maxWidth: "100%",
+          height: "auto",
+          marginTop: "20px",
+          borderRadius: "30px",
         }}
       />
-{/* 
+      {/* 
    
       {/* <CommentsPage /> */}
       {/* <FeedbackPage /> */}
