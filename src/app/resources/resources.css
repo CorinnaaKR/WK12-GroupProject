@@ -13,8 +13,8 @@
   margin: 0 auto;
   font-weight: bold;
   color: white;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 0.625rem;
+  border-radius: 0.625rem;
 }
 
 h2,
@@ -28,7 +28,7 @@ h6 {
   margin: 0 auto;
   font-weight: bold;
   color: #2bd872;
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 /* div {
@@ -70,12 +70,12 @@ h6 {
 .liverpool */
 {
   text-align: center;
-  max-width: 800px;
-  margin: 20px;
+  max-width: 50rem;
+  margin: 1.25rem;
   padding: 20px;
   border: 6px solid #2bd872;
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 0.625rem;
+  padding: 0.625rem;
 }
 
 .suffolk,
@@ -87,11 +87,11 @@ h6 {
 .humber,
 .liverpool
 {
-  text-align: center;
-  max-width: 800px;
-  margin: 20px;
+text-align: center;
+  max-width: 50rem;
+  margin: 1.25rem;
   padding: 20px;
   border: 3px solid #2bd872;
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 0.625rem;
+  padding: 0.625rem;
 }

@@ -41,21 +41,21 @@ export default function handleFeedbackSave() {
     <div
       style={{
         textAlign: "center",
-        maxWidth: "800px",
+        maxWidth: "50rem",
         margin: "0 auto",
-        padding: "20px",
-        border: "6px solid #2BD872",
-        borderRadius: "10px",
+        padding: "1.25rem",
+        border: "0.375rem solid #2BD872",
+        borderRadius: "0.625rem",
       }}
     >
       <h1 style={{ fontSize: "3rem" }}>
         <i>Feedback</i>
       </h1>
       <div>
-        <h2 style={{ margin: "10px", fontSize: "1.2rem" }}>
+        <h2 style={{ margin: "0.625rem", fontSize: "1.2rem" }}>
           <i>Share your thoughts on Heli</i>
         </h2>
-        <p style={{ marginBottom: "10px" }}>
+        <p style={{ marginBottom: "0.625rem" }}>
           We would love to hear your feedback on Heli&apos;s debut web app and
           story so that we can offer the best experience going forward with our
           future endeavours. We aim to provide the highest quality educational
@@ -63,7 +63,7 @@ export default function handleFeedbackSave() {
         </p>
         <form action={handleFeedbackSubmission}>
           <div>
-            <label htmlFor="nameBox" style={{ fontSize: "20px" }}>
+            <label htmlFor="nameBox" style={{ fontSize: "1.25rem" }}>
               Name:
             </label>
             <input
@@ -72,20 +72,20 @@ export default function handleFeedbackSave() {
               type="text"
               id="nameBox"
               placeholder="Your Name"
-              border="1px"
+              border="0.063rem"
               style={{
                 width: "100%",
                 boxSizing: "border-box",
-                border: "2px solid #c67afe",
-                padding: "10px",
-                borderRadius: "5px",
-                marginBottom: "10px",
+                border: "0.125rem solid #c67afe",
+                padding: "0.625rem",
+                borderRadius: "0.625rem",
+                marginBottom: "0.625rem",
               }}
             />
           </div>
 
           <div>
-            <label htmlFor="emailBox" style={{ fontSize: "20px" }}>
+            <label htmlFor="emailBox" style={{ fontSize: "1.25rem" }}>
               Email:
             </label>
             <input
@@ -97,16 +97,16 @@ export default function handleFeedbackSave() {
               style={{
                 width: "100%",
                 boxSizing: "border-box",
-                border: "2px solid #c67afe",
-                padding: "10px",
-                borderRadius: "5px",
-                marginBottom: "10px",
+                border: "0.125rem solid #c67afe",
+                padding: "0.625rem",
+                borderRadius: "0.313rem",
+                marginBottom: "0.625rem",
               }}
             />
           </div>
 
           <div>
-            <label htmlFor="doneWell" style={{ fontSize: "20px" }}>
+            <label htmlFor="doneWell" style={{ fontSize: "1.25rem" }}>
               What did we do well?:
             </label>
             <textarea
@@ -118,16 +118,16 @@ export default function handleFeedbackSave() {
               style={{
                 width: "100%",
                 boxSizing: "border-box",
-                border: "2px solid #c67afe",
-                padding: "10px",
-                borderRadius: "5px",
-                marginBottom: "10px",
+                border: "0.125rem solid #c67afe",
+                padding: "0.625rem",
+                borderRadius: "0.313rem",
+                marginBottom: "0.625rem",
               }}
             />
           </div>
 
           <div>
-            <label htmlFor="doBetter" style={{ fontSize: "20px" }}>
+            <label htmlFor="doBetter" style={{ fontSize: "1.25rem" }}>
               What could we do better?:{" "}
             </label>
             <textarea
@@ -139,16 +139,16 @@ export default function handleFeedbackSave() {
               style={{
                 width: "100%",
                 boxSizing: "border-box",
-                border: "2px solid #c67afe",
-                padding: "10px",
-                borderRadius: "5px",
-                marginBottom: "10px",
+                border: "0.125rem solid #c67afe",
+                padding: "0.625rem",
+                borderRadius: "0.313rem",
+                marginBottom: "0.625rem",
               }}
             />
           </div>
 
           <div>
-            <label htmlFor="otherBox" style={{ fontSize: "20px" }}>
+            <label htmlFor="otherBox" style={{ fontSize: "1.25rem" }}>
               Any other feedback?:{" "}
             </label>
             <textarea
@@ -160,16 +160,16 @@ export default function handleFeedbackSave() {
               style={{
                 width: "100%",
                 boxSizing: "border-box",
-                border: "2px solid #c67afe",
-                padding: "10px",
-                borderRadius: "5px",
-                marginBottom: "10px",
+                border: "0.125rem solid #c67afe",
+                padding: "0.625rem",
+                borderRadius: "0.313rem",
+                marginBottom: "0.625rem",
               }}
             />
           </div>
 
           <div>
-            <label style={{ fontSize: "20px" }}>
+            <label style={{ fontSize: "1.25rem" }}>
               Did you find this useful?:
             </label>
             <br />
@@ -181,7 +181,7 @@ export default function handleFeedbackSave() {
               value="true"
               required
             />
-            <label htmlFor="useful_yes" style={{ padding: "7px" }}>
+            <label htmlFor="useful_yes" style={{ padding: "0.438rem" }}>
               Yes{" "}
             </label>
 
@@ -192,7 +192,7 @@ export default function handleFeedbackSave() {
               value="false"
               required
             />
-            <label htmlFor="useful_no" style={{ padding: "7px" }}>
+            <label htmlFor="useful_no" style={{ padding: "0.438rem" }}>
               No
             </label>
           </div>
