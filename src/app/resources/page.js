@@ -1,3 +1,5 @@
+import "./resources.css";
+
 export default function ResourcePage() {
   return (
     <>
