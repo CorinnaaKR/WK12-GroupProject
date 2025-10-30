@@ -2,9 +2,24 @@
 import Script from "next/script";
 import InkButtons from "@/components/InkButtons";
 import "./story.css";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 // import { Story } from "inkjs";
+const useScript = (url) => {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = url;
+    script.type = "module";
+    script.crossOrigin = "use-credentials";
+    script.defer = true;
+    document.body.appendChild(script);
+    console.log("script run");
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, [url]);
+};
 export default function StoryPage() {
+  useScript("/ink-files/main.js");
   return (
     <main className="pageContainer">
       <section className="storySection">
@@ -16,12 +31,10 @@ export default function StoryPage() {
       <Script
         src="/ink-files/ink.js"
         strategy="beforeInteractive"
-        onReady={() => {
-          console.log("ink.js loaded");
-        }}
+        onReady={() => {}}
       />
-
-      <Script
+      {/* <Script
+        async
         type="module"
         src="/ink-files/main.js"
         strategy="afterInteractive"
@@ -29,7 +42,7 @@ export default function StoryPage() {
           console.log("main.js loaded and executed");
         }}
         crossOrigin="use-credentials"
-      />
+      /> */}
     </main>
   );
 }
