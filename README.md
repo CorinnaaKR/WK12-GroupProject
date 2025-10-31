@@ -2,7 +2,8 @@
 
 ## story based learning tool focused on the prevent scheme
 
-Thursday: After choosing groups, we were put in breakout rooms and began discussing ideas. We agreed on the idea and then broken down the planning tasks. We created a trello board for tasks to be completed and assigned, a google doc for our communication plan, user stories and general planning + mark scheme, a figma for the wireframe, canva for the web site map with an initial table to track what information we would need for the database, and then DrawSQL to template the database structure.
+Thursday:
+After choosing groups, we were put in breakout rooms and began discussing ideas. We agreed on the idea and then broken down the planning tasks. We created a trello board for tasks to be completed and assigned, a google doc for our communication plan, user stories and general planning + mark scheme, a figma for the wireframe, canva for the web site map with an initial table to track what information we would need for the database, and then DrawSQL to template the database structure.
 Steph did the canva (site map) & set up documentation (trello, google docs ect.)
 Corinna did the figma (wireframe)
 Callum did the draw SQL.
@@ -13,9 +14,7 @@ Friday Plan: Test repo with Ink and deployment - deep div into Ink documentation
 Friday:
 Callum to use the test repo he made yesterday to figure out how to pull/highlight sections of the text or key words and store them in a side bar for the user to review later.
 Steph to deep dive into ink documentation with a focus on components and features, looking for anything that would be useful to have in our story - looking a the demons provided by an online tutorial from codebar.
-Corinna also to deep dive into next documentation with focus on story story and layout - using components to create story template structure
-
-We used a youtube tutorial produced by code bar on how to use inky as a reference point.
+Corinna also to deep dive into next documentation with focus on story story and layout - using components to create story template structure. We used a youtube tutorial produced by code bar on how to use inky as a reference point.
 
 Callum successfully managed to select text to put into a sidebar that displayed on the page and could be referred back to. We as a team discussed dynamic routes and folder structure which Steph then added into canva. Corinna began templating the story in inky, researching to see if there's a way to display text messages as an actual text thread. Before lunch, we were all reading the documentation to establish structures, features and any limitations there might be.
 
@@ -23,9 +22,7 @@ Callum to play around with the test repo and css styling for the ink components 
 Steph to look at accessibility features we might include, such as aria labels - screen reader.
 Corinna to continue writing first draft of the story ready for ready through at the end of the day so group can collaborate on decide choices within the story.
 
-At the end of the end, we did a run through of the first draft of the story, made some word changes, and went through the choices to check if all group members agreed on the content. Callum confirmed react avatar would be easy to import and use as a component. Steph drew up our file structure template in canva to map out our files and dynamic routes.
-
-At the very end of the day, Corinna set up the repository and added Callum & Steph as collaborators ready to hit the ground running on Monday.
+At the end of the end, we did a run through of the first draft of the story, made some word changes, and went through the choices to check if all group members agreed on the content. Callum confirmed react avatar would be easy to import and use as a component. Steph drew up our file structure template in canva to map out our files and dynamic routes.At the very end of the day, Corinna set up the repository and added Callum & Steph as collaborators ready to hit the ground running on Monday.
 
 Monday:
 Monday morning, we established a plan for the day and divided up tasks.
@@ -47,8 +44,7 @@ Callum - user profile
 Steph - feedback and comments forms
 Corinna - Error page
 
-Wednesday
-
+Wednesday:
 We started Wednesday all pitching to solve the error problem with the sotry when it loads. Callum tried addiung a defer but that didnt change anything. Bertie suggested using an iframe which we tried but that created a duplicate of the nav bar, and the code still errored. We also asked joe and he had a look through our code, pointed out that there was a loop around the sign up page, and then suggested we use 'useState' and 'onLoad'. We made those changes and it fixed the problem. Corinna agreed to work on the metadata, and also design a logo to use in the metadata. Steph agreed to look at completeing the home page and about page.
 
 Before lunch we managed to solve the story load error, Corinna finished the metadata and a logo - although encountered an error when trying to add metadata to the story page because its a page that has 'use client'so Corinna removed it and just kept the metadata on the layout page. Steph created the extra pages and added them to the navbar ready for coding after lunch.
@@ -62,7 +58,7 @@ Corinna ran npm run dev and was greeted with an error saying the page couldnt co
 
 Callum discovered an issue with the story page in that once the sotry was loaded, if the user leaves the story page then tries to go back into it the story doesnt load again. As a group we tried to troubleshoot, then ended up asking Bertie. Callum and Bertie tried troubleshooting, while Corinna worked on the resources page and Steph worked on the Home & About pages.
 
-Thursday
+Thursday:
 We started the day byt agreeing tasks: Callum wanted to continue orking on the erro0r from yesterday, steph is going to start of the styling for the home home and the abou page. Corinna is going to finish the resources page and then begin styling it.
 
 We asked for help from Manny for the refresh issue and he had a couple of suggestions, Bertie also joined, but after experimenting with useEffect and useState for a while, Manny said a better solution given the time constraits would be to hide the header while the user is in story mode and then redisplay it when the user is finished with the story. Callum set about trying to do that, with Corinna and Steph pitching in solutions. Steph finished styling the about and home page, then moved on to styling the user page. Corinnas finished the resources page and then set about styling the resources page.
@@ -104,3 +100,10 @@ Callum managed to hide the header and put a button at the bottom of the page so 
   ![image of the feedback form on the site](/public/readme-screenshots/feedbackForm.png)
 
 
+Friday:
+We started the day by discussing some testing we had done the evening before, asking friends to try the app. A couple of the people we asked came back and said that they liked the app but when navigating to the story on mobile, they could scroll down. We discussed this as a team, and believe this to be that the snippets box moves to under the story when the screen is too narrow. The snippets box also ends up sitting on top of the footer as well - we will include this feedback in our presentation.
+
+Agreed tasks:
+Callum to do technical readme.
+Steph to assemble slides
+Corinna to do reflection readme and assemble the assets folder with screenshots of planning
