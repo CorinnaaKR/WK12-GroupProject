@@ -76,9 +76,13 @@ Callum managed to hide the header and put a button at the bottom of the page so 
 - On the command line, run git clone (URL GOES HERE)
   ![Clone command](/public/readme-screenshots/cloneCommand.png)
 - Navigate into the new folder, run cd WK12-GroupProject
+
   ![command to navigate to the file](/public/readme-screenshots/cdProject.png)
+
 - Run npm i to install all the project dependencies
+
   ![npm i command](/public/readme-screenshots/npmI.png)
+
 - This will give you the ability to edit files for the site and make a pull request to try and improve the site
   (environment variables will prevent the page from functioning for testing it is recommended to get your own clerk keys and database url)
 
@@ -92,8 +96,11 @@ Callum managed to hide the header and put a button at the bottom of the page so 
 - Sign up/in using the clerk system
   ![Above mentioned system to sign up](/public/readme-screenshots/signupPage.png)
 - Once you've signed up, use the navbar to navigate the site (the user icon can be clicked to edit your account or log out)
+
   ![Navigation bar for the site](/public/readme-screenshots/navbar.png)
+
   ### NOTE: once you navigate to the story, you cannot directly navigate away, and must complete the story in order to do so(the navbar disappears).
+
 - Once you're ready to run through the story, navigate to Story and begin proceeding through the story.
 - Orange text are options for you to say in response to the above story
   ![First two story options on the site, one highlighted](/public/readme-screenshots/storyOptions.png)
