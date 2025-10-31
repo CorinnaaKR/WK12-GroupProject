@@ -68,3 +68,35 @@ We started the day byt agreeing tasks: Callum wanted to continue orking on the e
 We asked for help from Manny for the refresh issue and he had a couple of suggestions, Bertie also joined, but after experimenting with useEffect and useState for a while, Manny said a better solution given the time constraits would be to hide the header while the user is in story mode and then redisplay it when the user is finished with the story. Callum set about trying to do that, with Corinna and Steph pitching in solutions. Steph finished styling the about and home page, then moved on to styling the user page. Corinnas finished the resources page and then set about styling the resources page.
 
 Before lunch, Callum is still trying to make it so that the user can't navigate off the story page while in the story. Steph finished styling the story , home and about pages. Corinna finished styling the resources but found that some of styling elements were affecting other pages so the team collaborated to solve those issues. Steph and Corinna are also pitching in to help Callum.
+
+## How to install/contribute:
+
+- git clone from the repo:
+  ![image showing where you access the link to clone the repo](/public/readme-screenshots/gitClone.png)
+- on the command line, run git clone (URL GOES HERE)
+  ![Clone command](/public/readme-screenshots/cloneCommand.png)
+- navigate into the new folder, run cd WK12-GroupProject
+  ![command to navigate to the file](/public/readme-screenshots/cdProject.png)
+- run npm i to install all the project dependencies
+  ![npm i command](/public/readme-screenshots/npmI.png)
+- this will give you the ability to edit files for the site and make a pull request to try and improve the site
+  (environment variables will prevent the page from functioning for testing it is recommended to get your own clerk keys and database url)
+
+## How to use the site:
+
+- go the the main site page: https://wk-12-group-project.vercel.app/
+- click sign up on the top right of the home page (or sign in if you've already signed up)
+  ![Sign in and sign up buttons on the page](/public/readme-screenshots/signinAndSignup.png)
+- sign up/in using the clerk system
+  ![Above mentioned system to sign up](/public/readme-screenshots/signupPage.png)
+- Once you've signed up, use the navbar to navigate the site (the user icon can be clicked to edit your account or log out)
+  ![Navigation bar for the site](/public/readme-screenshots/navbar.png)
+  ### NOTE: once you navigate to the story, you cannot directly navigate away, and must complete the story in order to do so(the navbar disappears).
+- Once you're ready to run through the story, navigate to Story and begin proceeding through the story.
+- Orange text are options for you to say in response to the above story
+  ![First two story options on the site, one highlighted](/public/readme-screenshots/storyOptions.png)
+- on completing the story, a line saying navigate to resources will appear, that is how you leave the story page
+  ![Final line of the story and the 'navigate to resources' link](/public/readme-screenshots/endOfStory.png)
+- on completing the story, feel free to head to feedback to give feedback on the story and site
+  ![image of the navbar with feedback highlighted](/public/readme-screenshots/feedbackInNavbar.png)
+  ![image of the feedback form on the site](/public/readme-screenshots/feedbackForm.png)
