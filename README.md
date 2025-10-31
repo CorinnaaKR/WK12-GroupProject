@@ -67,6 +67,14 @@ Before lunch, Callum is still trying to make it so that the user can't navigate 
 
 Callum managed to hide the header and put a button at the bottom of the page so that the reader has to finish the story and then use a button to navigate away from the page. Steph finished styling the home and about page. Corinna moved on to adding aria labels, Steph went through checking the styling across all the pages is consistent, Callum did a final spell and format check on the story. Corinna then added a media query to the layout page, Callum found an error on the font which affected how the page shrunk down . So steph and callum divided the pages between them and went through changing the font size on each page form px to rem. Callum then ran a check on the light house report.
 
+Friday:
+We started the day by discussing some testing we had done the evening before, asking friends to try the app. A couple of the people we asked came back and said that they liked the app but when navigating to the story on mobile, they could scroll down. We discussed this as a team, and believe this to be that the snippets box moves to under the story when the screen is too narrow. The snippets box also ends up sitting on top of the footer as well - we will include this feedback in our presentation.
+
+Agreed tasks:
+Callum to do technical readme.
+Steph to assemble slides
+Corinna to do reflection readme and assemble the assets folder with screenshots of planning
+
 ## How to install/contribute:
 
 - Get the git clone url from the repo:
@@ -102,12 +110,3 @@ Callum managed to hide the header and put a button at the bottom of the page so 
 - On completing the story, feel free to head to feedback to give feedback on the story and site
   ![image of the navbar with feedback highlighted](/public/readme-screenshots/feedbackInNavbar.png)
   ![image of the feedback form on the site](/public/readme-screenshots/feedbackForm.png)
-
-
-Friday:
-We started the day by discussing some testing we had done the evening before, asking friends to try the app. A couple of the people we asked came back and said that they liked the app but when navigating to the story on mobile, they could scroll down. We discussed this as a team, and believe this to be that the snippets box moves to under the story when the screen is too narrow. The snippets box also ends up sitting on top of the footer as well - we will include this feedback in our presentation.
-
-Agreed tasks:
-Callum to do technical readme.
-Steph to assemble slides
-Corinna to do reflection readme and assemble the assets folder with screenshots of planning
