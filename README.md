@@ -69,23 +69,27 @@ Callum managed to hide the header and put a button at the bottom of the page so 
 
 ## How to install/contribute:
 
-- git clone from the repo:
+- Get the git clone url from the repo:
+
   ![image showing where you access the link to clone the repo](/public/readme-screenshots/gitClone.png)
-- on the command line, run git clone (URL GOES HERE)
+
+- On the command line, run git clone (URL GOES HERE)
   ![Clone command](/public/readme-screenshots/cloneCommand.png)
-- navigate into the new folder, run cd WK12-GroupProject
+- Navigate into the new folder, run cd WK12-GroupProject
   ![command to navigate to the file](/public/readme-screenshots/cdProject.png)
-- run npm i to install all the project dependencies
+- Run npm i to install all the project dependencies
   ![npm i command](/public/readme-screenshots/npmI.png)
-- this will give you the ability to edit files for the site and make a pull request to try and improve the site
+- This will give you the ability to edit files for the site and make a pull request to try and improve the site
   (environment variables will prevent the page from functioning for testing it is recommended to get your own clerk keys and database url)
 
 ## How to use the site:
 
-- go the the main site page: https://wk-12-group-project.vercel.app/
-- click sign up on the top right of the home page (or sign in if you've already signed up)
+- Go the the main site page: https://wk-12-group-project.vercel.app/
+- Click sign up on the top right of the home page (or sign in if you've already signed up)
+
   ![Sign in and sign up buttons on the page](/public/readme-screenshots/signinAndSignup.png)
-- sign up/in using the clerk system
+
+- Sign up/in using the clerk system
   ![Above mentioned system to sign up](/public/readme-screenshots/signupPage.png)
 - Once you've signed up, use the navbar to navigate the site (the user icon can be clicked to edit your account or log out)
   ![Navigation bar for the site](/public/readme-screenshots/navbar.png)
@@ -93,9 +97,9 @@ Callum managed to hide the header and put a button at the bottom of the page so 
 - Once you're ready to run through the story, navigate to Story and begin proceeding through the story.
 - Orange text are options for you to say in response to the above story
   ![First two story options on the site, one highlighted](/public/readme-screenshots/storyOptions.png)
-- on completing the story, a line saying navigate to resources will appear, that is how you leave the story page
+- On completing the story, a line saying navigate to resources will appear, that is how you leave the story page
   ![Final line of the story and the 'navigate to resources' link](/public/readme-screenshots/endOfStory.png)
-- on completing the story, feel free to head to feedback to give feedback on the story and site
+- On completing the story, feel free to head to feedback to give feedback on the story and site
   ![image of the navbar with feedback highlighted](/public/readme-screenshots/feedbackInNavbar.png)
   ![image of the feedback form on the site](/public/readme-screenshots/feedbackForm.png)
 
