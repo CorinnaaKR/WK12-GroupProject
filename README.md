@@ -69,6 +69,8 @@ We asked for help from Manny for the refresh issue and he had a couple of sugges
 
 Before lunch, Callum is still trying to make it so that the user can't navigate off the story page while in the story. Steph finished styling the story , home and about pages. Corinna finished styling the resources but found that some of styling elements were affecting other pages so the team collaborated to solve those issues. Steph and Corinna are also pitching in to help Callum.
 
+Callum managed to hide the header and put a button at the bottom of the page so that the reader has to finish the story and then use a button to navigate away from the page. Steph finished styling the home and about page. Corinna moved on to adding aria labels, Steph went through checking the styling across all the pages is consistent, Callum did a final spell and format check on the story. Corinna then added a media query to the layout page, Callum found an error on the font which affected how the page shrunk down . So steph and callum divided the pages between them and went through changing the font size on each page form px to rem. Callum then ran a check on the light house report.
+
 ## How to install/contribute:
 
 - git clone from the repo:
@@ -100,3 +102,5 @@ Before lunch, Callum is still trying to make it so that the user can't navigate 
 - on completing the story, feel free to head to feedback to give feedback on the story and site
   ![image of the navbar with feedback highlighted](/public/readme-screenshots/feedbackInNavbar.png)
   ![image of the feedback form on the site](/public/readme-screenshots/feedbackForm.png)
+
+
